@@ -56,10 +56,12 @@ namespace ERespondent
 
             //для второго раздела
             Section2_dataGridViewHeader2_1.ColumnWidthChanged += dataGridViewSection2_ColumnWidthChanged;
-            Section2_dataGridViewHeader2_2.ColumnWidthChanged += dataGridViewSection2_ColumnWidthChanged;
+
+
+          /*  Section2_dataGridViewHeader2_2.ColumnWidthChanged += dataGridViewSection2_ColumnWidthChanged;
             Section2_dataGridView1.ColumnWidthChanged += dataGridViewSection2_ColumnWidthChanged;
             Section2_dataGridView2.ColumnWidthChanged += dataGridViewSection2_ColumnWidthChanged;
-            Section2_dataGridView3.ColumnWidthChanged += dataGridViewSection2_ColumnWidthChanged;
+            Section2_dataGridView3.ColumnWidthChanged += dataGridViewSection2_ColumnWidthChanged;*/
         }
 
         #region РАЗДЕЛ 1 (tab1)
@@ -244,13 +246,13 @@ namespace ERespondent
                 Section1_dataGridView2.Columns[i].Width = Section1_dataGridViewHeader1_1.Columns[i].Width;
                 Section1_dataGridView3.Columns[i].Width = Section1_dataGridViewHeader1_1.Columns[i].Width;
             }
-            
-            //int indexCol = e.Column.Index;
-            //int newWidth = e.Column.Width;
-
-            //Section1_dataGridView1.Columns[indexCol].Width = newWidth;
-            //Section1_dataGridView2.Columns[indexCol].Width = newWidth;
-            //Section1_dataGridView3.Columns[indexCol].Width = newWidth;
+            /* При изменении размера столбца в любой колонке, изменялась ширина колонок во всех таблицах
+            int indexCol = e.Column.Index;
+            int newWidth = e.Column.Width;
+            Section1_dataGridView1.Columns[indexCol].Width = newWidth;
+            Section1_dataGridView2.Columns[indexCol].Width = newWidth;
+            Section1_dataGridView3.Columns[indexCol].Width = newWidth;
+             */
         }
         #endregion
 
@@ -790,21 +792,19 @@ namespace ERespondent
         #endregion
 
         /// <summary>
-        /// Собатие, которое происходит при изменении размера столбца,
+        /// Событие, которое происходит при изменении размера столбца (в шапке таблицы),
         /// при этом все связанные с этой колонкой столбцы тоже меняют размер
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void dataGridViewSection2_ColumnWidthChanged(object sender, DataGridViewColumnEventArgs e)
         {
-            int indexCol = e.Column.Index;
-            int newWidth = e.Column.Width;
-             
-            Section2_dataGridViewHeader2_1.Columns[indexCol].Width = newWidth;
-            Section2_dataGridViewHeader2_2.Columns[indexCol].Width = newWidth;
-            Section2_dataGridView1.Columns[indexCol].Width = newWidth;
-            Section2_dataGridView2.Columns[indexCol].Width = newWidth;
-            Section2_dataGridView3.Columns[indexCol].Width = newWidth;
+            for(int i=0; i<Section2_dataGridViewHeader2_1.ColumnCount;i++)
+            {
+                Section2_dataGridView1.Columns[i].Width = Section2_dataGridViewHeader2_1.Columns[i].Width;
+                Section2_dataGridView2.Columns[i].Width = Section2_dataGridViewHeader2_1.Columns[i].Width;
+                Section2_dataGridView3.Columns[i].Width = Section2_dataGridViewHeader2_1.Columns[i].Width;
+            }
         }
 
         /// <summary>
@@ -991,7 +991,7 @@ namespace ERespondent
             ExcelExport.InitSection3(Section3_T3, Section3_T4, Section3_T5);
         }
 
-        
+     
     }
 }
 
