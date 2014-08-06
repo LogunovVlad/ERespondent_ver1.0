@@ -1,0 +1,64 @@
+E:\Install\!КВАНТ\Project\ERespondent\ERespondent\bin\Debug\ERespondent.exe
+E:\Install\!КВАНТ\Project\ERespondent\ERespondent\bin\Debug\ERespondent.pdb
+E:\Install\!КВАНТ\Project\ERespondent\ERespondent\obj\x86\Debug\ERespondent.Properties.Resources.resources
+E:\Install\!КВАНТ\Project\ERespondent\ERespondent\obj\x86\Debug\ERespondent.csproj.GenerateResource.Cache
+E:\Install\!КВАНТ\Project\ERespondent\ERespondent\obj\x86\Debug\ERespondent.exe
+E:\Install\!КВАНТ\Project\ERespondent\ERespondent\obj\x86\Debug\ERespondent.pdb
+e:\Install\!КВАНТ\Project\ERespondent\ERespondent\obj\x86\Debug\ERespondent.csprojResolveAssemblyReference.cache
+e:\Install\!КВАНТ\Project\ERespondent\ERespondent\bin\Debug\GridWpf.dll
+e:\Install\!КВАНТ\Project\ERespondent\ERespondent\bin\Debug\WPFToolkit.dll
+e:\Install\!КВАНТ\Project\ERespondent\ERespondent\bin\Debug\GridWpf.pdb
+e:\Install\!КВАНТ\Project\ERespondent\ERespondent\obj\x86\Debug\ERespondent.MainForm.resources
+e:\Install\!КВАНТ\Project\ERespondent\ERespondent\obj\x86\Debug\ERespondent.OKPO.resources
+e:\Install\!КВАНТ\Project\ERespondent\ERespondent\obj\x86\Debug\ERespondent.AddEditOKPO.resources
+e:\Install\!КВАНТ\Project\ERespondent\ERespondent\obj\x86\Debug\ERespondent.DirectionEnergySave.resources
+e:\Install\!КВАНТ\Project\ERespondent\ERespondent\obj\x86\Debug\ERespondent.TypeFuel.resources
+e:\Install\!КВАНТ\Project\ERespondent\ERespondent\bin\Debug\ERespondent.exe.config
+e:\Install\!КВАНТ\Project\ERespondent\ERespondent\obj\x86\Debug\ERespondent.Table1.resources
+e:\Учеба\Лабораторные\5 курс\Практика\ERespondent\ERespondent\bin\Debug\ERespondent.exe.config
+e:\Учеба\Лабораторные\5 курс\Практика\ERespondent\ERespondent\obj\x86\Debug\ERespondent.exe
+e:\Учеба\Лабораторные\5 курс\Практика\ERespondent\ERespondent\obj\x86\Debug\ERespondent.pdb
+e:\Учеба\Лабораторные\5 курс\Практика\ERespondent\ERespondent\bin\Debug\ERespondent.exe
+e:\Учеба\Лабораторные\5 курс\Практика\ERespondent\ERespondent\bin\Debug\ERespondent.pdb
+e:\Учеба\Лабораторные\5 курс\Практика\ERespondent\ERespondent\bin\Debug\GridWpf.dll
+e:\Учеба\Лабораторные\5 курс\Практика\ERespondent\ERespondent\bin\Debug\WPFToolkit.dll
+e:\Учеба\Лабораторные\5 курс\Практика\ERespondent\ERespondent\bin\Debug\GridWpf.pdb
+e:\Учеба\Лабораторные\5 курс\Практика\ERespondent\ERespondent\obj\x86\Debug\ERespondent.csprojResolveAssemblyReference.cache
+e:\Учеба\Лабораторные\5 курс\Практика\ERespondent\ERespondent\obj\x86\Debug\ERespondent.AddEditOKPO.resources
+e:\Учеба\Лабораторные\5 курс\Практика\ERespondent\ERespondent\obj\x86\Debug\ERespondent.DirectionEnergySave.resources
+e:\Учеба\Лабораторные\5 курс\Практика\ERespondent\ERespondent\obj\x86\Debug\ERespondent.MainForm.resources
+e:\Учеба\Лабораторные\5 курс\Практика\ERespondent\ERespondent\obj\x86\Debug\ERespondent.OKPO.resources
+e:\Учеба\Лабораторные\5 курс\Практика\ERespondent\ERespondent\obj\x86\Debug\ERespondent.Properties.Resources.resources
+e:\Учеба\Лабораторные\5 курс\Практика\ERespondent\ERespondent\obj\x86\Debug\ERespondent.Table1.resources
+e:\Учеба\Лабораторные\5 курс\Практика\ERespondent\ERespondent\obj\x86\Debug\ERespondent.TypeFuel.resources
+e:\Учеба\Лабораторные\5 курс\Практика\ERespondent\ERespondent\obj\x86\Debug\ERespondent.csproj.GenerateResource.Cache
+e:\Учеба\Лабораторные\5 курс\Практика\ERespondent\ERespondent\bin\Debug\ClassLibrary1.dll
+e:\Учеба\Лабораторные\5 курс\Практика\ERespondent\ERespondent\bin\Debug\ClassLibrary1.pdb
+e:\Учеба\Лабораторные\5 курс\Практика\ERespondent\ERespondent\obj\x86\Debug\ERespondent.CheckData.CheckProtocol.resources
+e:\Учеба\Лабораторные\5 курс\Практика\ERespondent\ERespondent\bin\Debug\ClosedXML.dll
+e:\Учеба\Лабораторные\5 курс\Практика\ERespondent\ERespondent\bin\Debug\DocumentFormat.OpenXml.dll
+e:\Учеба\Лабораторные\5 курс\Практика\ERespondent\ERespondent\bin\Debug\Microsoft.Office.Interop.Excel.dll
+e:\Учеба\Лабораторные\5 курс\Практика\ERespondent\ERespondent\bin\Debug\Office.dll
+e:\Учеба\Лабораторные\5 курс\Практика\ERespondent\ERespondent\bin\Debug\Microsoft.Vbe.Interop.dll
+e:\Учеба\Лабораторные\5 курс\Практика\ERespondent\ERespondent\bin\Debug\Microsoft.Office.Interop.Excel.xml
+e:\Учеба\Лабораторные\5 курс\Практика\ERespondent\ERespondent\bin\Debug\Office.xml
+D:\my\Электр Обработка Отчета 4ЭнСб\Проект Ввода шаблона отчета 4Энсб\ERespondent\ERespondent\bin\Debug\ERespondent.exe.config
+D:\my\Электр Обработка Отчета 4ЭнСб\Проект Ввода шаблона отчета 4Энсб\ERespondent\ERespondent\obj\x86\Debug\ERespondent.exe
+D:\my\Электр Обработка Отчета 4ЭнСб\Проект Ввода шаблона отчета 4Энсб\ERespondent\ERespondent\obj\x86\Debug\ERespondent.pdb
+d:\my\Электр Обработка Отчета 4ЭнСб\Проект Ввода шаблона отчета 4Энсб\ERespondent\ERespondent\bin\Debug\ERespondent.exe
+d:\my\Электр Обработка Отчета 4ЭнСб\Проект Ввода шаблона отчета 4Энсб\ERespondent\ERespondent\bin\Debug\ERespondent.pdb
+d:\my\Электр Обработка Отчета 4ЭнСб\Проект Ввода шаблона отчета 4Энсб\ERespondent\ERespondent\bin\Debug\ClosedXML.dll
+d:\my\Электр Обработка Отчета 4ЭнСб\Проект Ввода шаблона отчета 4Энсб\ERespondent\ERespondent\bin\Debug\DocumentFormat.OpenXml.dll
+d:\my\Электр Обработка Отчета 4ЭнСб\Проект Ввода шаблона отчета 4Энсб\ERespondent\ERespondent\bin\Debug\GridWpf.dll
+d:\my\Электр Обработка Отчета 4ЭнСб\Проект Ввода шаблона отчета 4Энсб\ERespondent\ERespondent\bin\Debug\GridWpf.pdb
+d:\my\Электр Обработка Отчета 4ЭнСб\Проект Ввода шаблона отчета 4Энсб\ERespondent\ERespondent\bin\Debug\ClassLibrary1.pdb
+d:\my\Электр Обработка Отчета 4ЭнСб\Проект Ввода шаблона отчета 4Энсб\ERespondent\ERespondent\obj\x86\Debug\ERespondent.AddEditOKPO.resources
+d:\my\Электр Обработка Отчета 4ЭнСб\Проект Ввода шаблона отчета 4Энсб\ERespondent\ERespondent\obj\x86\Debug\ERespondent.CheckData.CheckProtocol.resources
+d:\my\Электр Обработка Отчета 4ЭнСб\Проект Ввода шаблона отчета 4Энсб\ERespondent\ERespondent\obj\x86\Debug\ERespondent.DirectionEnergySave.resources
+d:\my\Электр Обработка Отчета 4ЭнСб\Проект Ввода шаблона отчета 4Энсб\ERespondent\ERespondent\obj\x86\Debug\ERespondent.MainForm.resources
+d:\my\Электр Обработка Отчета 4ЭнСб\Проект Ввода шаблона отчета 4Энсб\ERespondent\ERespondent\obj\x86\Debug\ERespondent.OKPO.resources
+d:\my\Электр Обработка Отчета 4ЭнСб\Проект Ввода шаблона отчета 4Энсб\ERespondent\ERespondent\obj\x86\Debug\ERespondent.Properties.Resources.resources
+d:\my\Электр Обработка Отчета 4ЭнСб\Проект Ввода шаблона отчета 4Энсб\ERespondent\ERespondent\obj\x86\Debug\ERespondent.Table1.resources
+d:\my\Электр Обработка Отчета 4ЭнСб\Проект Ввода шаблона отчета 4Энсб\ERespondent\ERespondent\obj\x86\Debug\ERespondent.TypeFuel.resources
+d:\my\Электр Обработка Отчета 4ЭнСб\Проект Ввода шаблона отчета 4Энсб\ERespondent\ERespondent\obj\x86\Debug\ERespondent.csprojResolveAssemblyReference.cache
+d:\my\Электр Обработка Отчета 4ЭнСб\Проект Ввода шаблона отчета 4Энсб\ERespondent\ERespondent\obj\x86\Debug\ERespondent.csproj.GenerateResource.Cache
