@@ -62,3 +62,23 @@ d:\my\Электр Обработка Отчета 4ЭнСб\Проект Вво
 d:\my\Электр Обработка Отчета 4ЭнСб\Проект Ввода шаблона отчета 4Энсб\ERespondent\ERespondent\obj\x86\Debug\ERespondent.TypeFuel.resources
 d:\my\Электр Обработка Отчета 4ЭнСб\Проект Ввода шаблона отчета 4Энсб\ERespondent\ERespondent\obj\x86\Debug\ERespondent.csprojResolveAssemblyReference.cache
 d:\my\Электр Обработка Отчета 4ЭнСб\Проект Ввода шаблона отчета 4Энсб\ERespondent\ERespondent\obj\x86\Debug\ERespondent.csproj.GenerateResource.Cache
+d:\git\ERespondent\ERespondent\bin\Debug\ERespondent.exe.config
+d:\git\ERespondent\ERespondent\obj\x86\Debug\ERespondent.exe
+d:\git\ERespondent\ERespondent\obj\x86\Debug\ERespondent.pdb
+d:\git\ERespondent\ERespondent\obj\x86\Debug\ERespondent.csprojResolveAssemblyReference.cache
+d:\git\ERespondent\ERespondent\obj\x86\Debug\ERespondent.AddEditOKPO.resources
+d:\git\ERespondent\ERespondent\obj\x86\Debug\ERespondent.CheckData.CheckProtocol.resources
+d:\git\ERespondent\ERespondent\obj\x86\Debug\ERespondent.DirectionEnergySave.resources
+d:\git\ERespondent\ERespondent\obj\x86\Debug\ERespondent.MainForm.resources
+d:\git\ERespondent\ERespondent\obj\x86\Debug\ERespondent.OKPO.resources
+d:\git\ERespondent\ERespondent\obj\x86\Debug\ERespondent.Properties.Resources.resources
+d:\git\ERespondent\ERespondent\obj\x86\Debug\ERespondent.Table1.resources
+d:\git\ERespondent\ERespondent\obj\x86\Debug\ERespondent.TypeFuel.resources
+d:\git\ERespondent\ERespondent\obj\x86\Debug\ERespondent.csproj.GenerateResource.Cache
+d:\git\ERespondent\ERespondent\bin\Debug\ERespondent.exe
+d:\git\ERespondent\ERespondent\bin\Debug\ERespondent.pdb
+d:\git\ERespondent\ERespondent\bin\Debug\ClosedXML.dll
+d:\git\ERespondent\ERespondent\bin\Debug\DocumentFormat.OpenXml.dll
+d:\git\ERespondent\ERespondent\bin\Debug\GridWpf.dll
+d:\git\ERespondent\ERespondent\bin\Debug\GridWpf.pdb
+d:\git\ERespondent\ERespondent\bin\Debug\ClassLibrary1.pdb

@@ -32,3 +32,14 @@ d:\my\Электр Обработка Отчета 4ЭнСб\Проект Вво
 d:\my\Электр Обработка Отчета 4ЭнСб\Проект Ввода шаблона отчета 4Энсб\ERespondent\GridWpf\obj\Debug\GridWpf.csproj.GenerateResource.Cache
 d:\my\Электр Обработка Отчета 4ЭнСб\Проект Ввода шаблона отчета 4Энсб\ERespondent\GridWpf\obj\Debug\GridWpf.dll
 d:\my\Электр Обработка Отчета 4ЭнСб\Проект Ввода шаблона отчета 4Энсб\ERespondent\GridWpf\obj\Debug\GridWpf.pdb
+d:\git\ERespondent\GridWpf\bin\Debug\GridWpf.dll
+d:\git\ERespondent\GridWpf\bin\Debug\GridWpf.pdb
+d:\git\ERespondent\GridWpf\obj\Debug\GridWpf.csprojResolveAssemblyReference.cache
+d:\git\ERespondent\GridWpf\obj\Debug\UserControl1.baml
+d:\git\ERespondent\GridWpf\obj\Debug\UserControl1.g.cs
+d:\git\ERespondent\GridWpf\obj\Debug\GridWpf_MarkupCompile.cache
+d:\git\ERespondent\GridWpf\obj\Debug\GridWpf.g.resources
+d:\git\ERespondent\GridWpf\obj\Debug\GridWpf.Properties.Resources.resources
+d:\git\ERespondent\GridWpf\obj\Debug\GridWpf.csproj.GenerateResource.Cache
+d:\git\ERespondent\GridWpf\obj\Debug\GridWpf.dll
+d:\git\ERespondent\GridWpf\obj\Debug\GridWpf.pdb

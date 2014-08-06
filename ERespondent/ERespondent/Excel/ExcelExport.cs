@@ -481,7 +481,6 @@ namespace ERespondent.Excel
                 {
                     if (grid[j, i].Value != null)
                     {
-
                         if (grid[j, i].EditType.ToString().Equals("System.Windows.Forms.DataGridViewComboBoxEditingControl"))
                         {
                             var value = from cStt in db.DestinationSave
@@ -501,7 +500,6 @@ namespace ERespondent.Excel
                     }
                     j++;
                 }
-
             }
         }
 
@@ -549,7 +547,7 @@ namespace ERespondent.Excel
             rngTable.Style.Alignment.WrapText = true;
             rngTable.Style.Font.FontSize = 10;
             rngTable.Style.Font.FontName = "Times New Roman";
-            
+
             #region Строка заголовок: таблица 1
             var rngR1 = rngTable.Range("A1:F3");
             rngR1.Style.Font.Bold = true;
@@ -609,7 +607,7 @@ namespace ERespondent.Excel
             #endregion
             #endregion
 
-            #region Таблица: Причины невыполнения мероприятий программы (плана мероприятий) по энергосбережению
+            #region Таблица: Выполнение установленного годового задания по экономии ТЭР
             #region Шапка
             _workSheet.Cell("I2").Value = "Выполнение установленного годового задания по экономии ТЭР";
             _workSheet.Cell("I3").Value = "Код строки";
@@ -649,18 +647,58 @@ namespace ERespondent.Excel
             colTemp.Style.Border.RightBorder = XLBorderStyleValues.Thin;
             colTemp.Style.Border.BottomBorder = XLBorderStyleValues.Thin;
             colTemp.Column(1).Merge();
-            rngTable3.Range("B2:C3").Merge();
-            
+            rngTable3.Range("B2:C2").Merge();
+
             rngTable3.Cells("A1:C5").Style.Border.OutsideBorder = XLBorderStyleValues.Thin;
             _workSheet.Columns("I:K").Width = 20;
-            
+
             #endregion
             #endregion
 
+            FillValueSection3(_workSheet, grid1, grid2, grid3);
             SaveBook(workBook);
         }
 
-        public 
+        public static void FillValueSection3(IXLWorksheet workSheet, DataGridView grid1, DataGridView grid2, DataGridView grid3)
+        {
+            var db = new E_RespondentDataContext();
+
+            workSheet.Cells("E5").Value = grid1[3, 1].Value;
+            workSheet.Cells("E6").Value = grid1[3, 2].Value;
+            workSheet.Cells("E7").Value = grid1[3, 3].Value;
+            workSheet.Cells("E8").Value = grid1[3, 4].Value;
+
+            workSheet.Cells("F5").Value = grid1[4, 1].Value;
+            workSheet.Cells("F6").Value = grid1[4, 2].Value;
+            workSheet.Cells("F7").Value = grid1[4, 3].Value;
+            workSheet.Cells("F8").Value = grid1[4, 4].Value;
+
+            workSheet.Cells("G5").Value = Convert.ToString(Convert.ToDouble(grid1[5, 1].Value) * 100) + "%";
+            workSheet.Cells("G6").Value = Convert.ToDouble(grid1[5, 2].Value) * 100 + "%";
+            workSheet.Cells("G7").Value = Convert.ToDouble(grid1[5, 3].Value) * 100 + "%";
+            workSheet.Cells("G8").Value = Convert.ToDouble(grid1[5, 4].Value) * 100 + "%";
+
+            workSheet.Cells("J6").Value = grid2[1, 1].Value;
+            workSheet.Cells("K6").Value = grid2[2, 1].Value;
+
+
+            int rCount = grid3.RowCount + 1;
+            var sheetSection1 = workSheet.Range("B14:D" + (rCount+10));
+
+            sheetSection1.Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
+            sheetSection1.Style.Alignment.Vertical = XLAlignmentVerticalValues.Center;
+            sheetSection1.Style.Alignment.WrapText = true;
+            sheetSection1.Style.Font.FontSize = 9;
+            sheetSection1.Style.Font.FontName = "Times New Roman";
+            sheetSection1.Style.Border.OutsideBorder = XLBorderStyleValues.Thin;
+            for(int i=1; i<grid3.RowCount;i++)
+            {
+                int indexRow = 13;
+                workSheet.Cells("B" + (indexRow + i)).Value =grid3[0, i].Value;
+                workSheet.Cells("C" + (indexRow + i)).Value = grid3[1, i].Value;
+                workSheet.Cells("D" + (indexRow + i)).Value = grid3[2, i].Value;
+            }
+        }
 
         #endregion
 

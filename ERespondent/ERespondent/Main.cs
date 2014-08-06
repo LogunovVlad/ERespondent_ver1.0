@@ -983,6 +983,9 @@ namespace ERespondent
 
         private void экспортВExcelToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            Section3_T3.EndEdit();
+            Section3_T4.EndEdit();
+            Section3_T5.EndEdit();
             ExcelExport.InitSection1(Section1_dataGridView1, Section1_dataGridView2, Section1_dataGridView3);
             ExcelExport.InitSection2(Section2_dataGridView1, Section2_dataGridView2, Section2_dataGridView3);
             ExcelExport.InitSection3(Section3_T3, Section3_T4, Section3_T5);
