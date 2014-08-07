@@ -585,6 +585,8 @@ namespace ERespondent
                     boxColumn.DataSource = save;
                     boxColumn.DisplayMember = "DestinationsSave";
                     boxColumn.ValueMember = "Coderecord";
+                    // новое добавление
+                    boxColumn.DataPropertyName = "Coderecord";
                     break;
                 case "TypeFuelEnergy":
                     var energy = from c in _db.TypeFuelEnergy
@@ -592,6 +594,8 @@ namespace ERespondent
                     boxColumn.DataSource = energy;
                     boxColumn.DisplayMember = "CodeTypeFuel";
                     boxColumn.ValueMember = "CodeRecord";
+                    // новое добавление
+                    boxColumn.DataPropertyName = "Coderecord";
                     break;
             }
             boxColumn.DropDownWidth = 1200;
@@ -990,10 +994,51 @@ namespace ERespondent
 
         private void создатьНовыйToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            CreateNewReport formRep=new CreateNewReport();
+            CreateNewReport formRep = new CreateNewReport();
             formRep.Show();
         }
 
+        private void открытьToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            int[] n = new int[] {100,200,301,302,303,304};
+            _db = new E_RespondentDataContext();
+            for(int i=1; i<n.Count();i++)
+            {
+                Section1_dataGridView1.Rows.Add();
+                Section1_dataGridView1[0, i].Value = n[i];
+
+                //делаем активной ячейку содержащую ComboBox
+                Section1_dataGridView1.CurrentCell = Section1_dataGridView1.Rows[i].Cells[2];
+                Section1_dataGridView1.Rows[i].Cells[2].Selected = true;
+                //Section1_dataGridView1.BeginEdit(true);
+
+                DestinationSave row = (from c in _db.DestinationSave
+                                       where c.CodeDirection == n[i]
+                                       select c).Single<DestinationSave>();
+                //устанавливаем индекс
+                ((DataGridViewComboBoxEditingControl)Section1_dataGridView1.EditingControl).SelectedValue = row.CodeRecord;
+                Section1_dataGridView1[3, i].Value = "23.03.2014";
+                Section1_dataGridView1[4, i].Value = row.Unit;
+            
+            }
+            Section1_dataGridView1[0, 0].Value = n[0];
+            Section1_dataGridView1.CurrentCell = Section1_dataGridView1.Rows[0].Cells[2];
+            Section1_dataGridView1.Rows[0].Cells[2].Selected = true;
+            ((DataGridViewComboBoxEditingControl)Section1_dataGridView1.EditingControl).SelectedValue = 1;
+            //int index = Convert.ToInt32(((ComboBox)sender).SelectedValue);
+            /*
+            DestinationSave row = (from c in _db.DestinationSave
+                                   where c.CodeRecord == index
+                                   select c).Single<DestinationSave>();
+            _gridSection2.CurrentRow.Cells[0].Value = row.CodeDirection;
+            if (!_gridSection2.Tag.Equals("T3"))
+            {
+                _gridSection2.CurrentRow.Cells[6].Value = row.Unit;
+            }
+            _gridSection2.EndEdit();
+            */
+        }
+        
     }
 }
 
