@@ -82,3 +82,4 @@ d:\git\ERespondent\ERespondent\bin\Debug\DocumentFormat.OpenXml.dll
 d:\git\ERespondent\ERespondent\bin\Debug\GridWpf.dll
 d:\git\ERespondent\ERespondent\bin\Debug\GridWpf.pdb
 d:\git\ERespondent\ERespondent\bin\Debug\ClassLibrary1.pdb
+d:\git\ERespondent\ERespondent\obj\x86\Debug\ERespondent.CreateNewReport.resources

@@ -31,15 +31,15 @@ namespace ERespondent
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.codeRecordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.codeDirectionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.destinationsSaveDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.unitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dsDirectSave = new ERespondent.DataSet.dsDirectSave();
             this.sqlSelectCommand1 = new System.Data.SqlClient.SqlCommand();
             this.sqlDirectionConnection = new System.Data.SqlClient.SqlConnection();
             this.sqlInsertCommand1 = new System.Data.SqlClient.SqlCommand();
             this.daDirectSave = new System.Data.SqlClient.SqlDataAdapter();
+            this.codeRecordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codeDirectionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.destinationsSaveDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.unitDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsDirectSave)).BeginInit();
@@ -47,9 +47,9 @@ namespace ERespondent
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.Controls.Add(this.dataGridView1, 0, 0);
@@ -79,32 +79,6 @@ namespace ERespondent
             this.dataGridView1.Size = new System.Drawing.Size(754, 432);
             this.dataGridView1.TabIndex = 0;
             // 
-            // codeRecordDataGridViewTextBoxColumn
-            // 
-            this.codeRecordDataGridViewTextBoxColumn.DataPropertyName = "CodeRecord";
-            this.codeRecordDataGridViewTextBoxColumn.HeaderText = "CodeRecord";
-            this.codeRecordDataGridViewTextBoxColumn.Name = "codeRecordDataGridViewTextBoxColumn";
-            this.codeRecordDataGridViewTextBoxColumn.ReadOnly = true;
-            this.codeRecordDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // codeDirectionDataGridViewTextBoxColumn
-            // 
-            this.codeDirectionDataGridViewTextBoxColumn.DataPropertyName = "CodeDirection";
-            this.codeDirectionDataGridViewTextBoxColumn.HeaderText = "CodeDirection";
-            this.codeDirectionDataGridViewTextBoxColumn.Name = "codeDirectionDataGridViewTextBoxColumn";
-            // 
-            // destinationsSaveDataGridViewTextBoxColumn
-            // 
-            this.destinationsSaveDataGridViewTextBoxColumn.DataPropertyName = "DestinationsSave";
-            this.destinationsSaveDataGridViewTextBoxColumn.HeaderText = "DestinationsSave";
-            this.destinationsSaveDataGridViewTextBoxColumn.Name = "destinationsSaveDataGridViewTextBoxColumn";
-            // 
-            // unitDataGridViewTextBoxColumn
-            // 
-            this.unitDataGridViewTextBoxColumn.DataPropertyName = "Unit";
-            this.unitDataGridViewTextBoxColumn.HeaderText = "Unit";
-            this.unitDataGridViewTextBoxColumn.Name = "unitDataGridViewTextBoxColumn";
-            // 
             // dsDirectSave
             // 
             this.dsDirectSave.DataSetName = "dsDirectSave";
@@ -113,7 +87,7 @@ namespace ERespondent
             // sqlSelectCommand1
             // 
             this.sqlSelectCommand1.CommandText = "SELECT        CodeRecord, CodeDirection, DestinationsSave, Unit\r\nFROM            " +
-    "DestinationSave";
+                "DestinationSave";
             this.sqlSelectCommand1.Connection = this.sqlDirectionConnection;
             // 
             // sqlDirectionConnection
@@ -123,7 +97,7 @@ namespace ERespondent
             // sqlInsertCommand1
             // 
             this.sqlInsertCommand1.CommandText = "INSERT INTO [DestinationSave] ([CodeDirection], [DestinationsSave], [Unit]) VALUE" +
-    "S (@CodeDirection, @DestinationsSave, @Unit)";
+                "S (@CodeDirection, @DestinationsSave, @Unit)";
             this.sqlInsertCommand1.Connection = this.sqlDirectionConnection;
             this.sqlInsertCommand1.Parameters.AddRange(new System.Data.SqlClient.SqlParameter[] {
             new System.Data.SqlClient.SqlParameter("@CodeDirection", System.Data.SqlDbType.Int, 0, "CodeDirection"),
@@ -140,6 +114,35 @@ namespace ERespondent
                         new System.Data.Common.DataColumnMapping("CodeDirection", "CodeDirection"),
                         new System.Data.Common.DataColumnMapping("DestinationsSave", "DestinationsSave"),
                         new System.Data.Common.DataColumnMapping("Unit", "Unit")})});
+            // 
+            // codeRecordDataGridViewTextBoxColumn
+            // 
+            this.codeRecordDataGridViewTextBoxColumn.DataPropertyName = "CodeRecord";
+            this.codeRecordDataGridViewTextBoxColumn.HeaderText = "CodeRecord";
+            this.codeRecordDataGridViewTextBoxColumn.Name = "codeRecordDataGridViewTextBoxColumn";
+            this.codeRecordDataGridViewTextBoxColumn.ReadOnly = true;
+            this.codeRecordDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // codeDirectionDataGridViewTextBoxColumn
+            // 
+            this.codeDirectionDataGridViewTextBoxColumn.DataPropertyName = "CodeDirection";
+            this.codeDirectionDataGridViewTextBoxColumn.FillWeight = 7F;
+            this.codeDirectionDataGridViewTextBoxColumn.HeaderText = "Код";
+            this.codeDirectionDataGridViewTextBoxColumn.Name = "codeDirectionDataGridViewTextBoxColumn";
+            // 
+            // destinationsSaveDataGridViewTextBoxColumn
+            // 
+            this.destinationsSaveDataGridViewTextBoxColumn.DataPropertyName = "DestinationsSave";
+            this.destinationsSaveDataGridViewTextBoxColumn.FillWeight = 73.85786F;
+            this.destinationsSaveDataGridViewTextBoxColumn.HeaderText = "Основные направления энергосбережения";
+            this.destinationsSaveDataGridViewTextBoxColumn.Name = "destinationsSaveDataGridViewTextBoxColumn";
+            // 
+            // unitDataGridViewTextBoxColumn
+            // 
+            this.unitDataGridViewTextBoxColumn.DataPropertyName = "Unit";
+            this.unitDataGridViewTextBoxColumn.FillWeight = 7F;
+            this.unitDataGridViewTextBoxColumn.HeaderText = "Ед. измерения";
+            this.unitDataGridViewTextBoxColumn.Name = "unitDataGridViewTextBoxColumn";
             // 
             // DirectionEnergySave
             // 
@@ -161,14 +164,14 @@ namespace ERespondent
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn codeRecordDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn codeDirectionDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn destinationsSaveDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn unitDataGridViewTextBoxColumn;
         private dsDirectSave dsDirectSave;
         private System.Data.SqlClient.SqlCommand sqlSelectCommand1;
         private System.Data.SqlClient.SqlConnection sqlDirectionConnection;
         private System.Data.SqlClient.SqlCommand sqlInsertCommand1;
         private System.Data.SqlClient.SqlDataAdapter daDirectSave;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codeRecordDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn codeDirectionDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn destinationsSaveDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn unitDataGridViewTextBoxColumn;
     }
 }

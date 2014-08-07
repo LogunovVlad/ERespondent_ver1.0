@@ -31,14 +31,14 @@ namespace ERespondent
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.codeRecordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.codeTypeFuelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.typeFuelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dsTypeFuel = new ERespondent.DataSet.dsTypeFuel();
             this.sqlSelectCommand1 = new System.Data.SqlClient.SqlCommand();
             this.sqlConnection1 = new System.Data.SqlClient.SqlConnection();
             this.sqlInsertCommand1 = new System.Data.SqlClient.SqlCommand();
             this.daTypeFuel = new System.Data.SqlClient.SqlDataAdapter();
+            this.codeRecordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.codeTypeFuelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.typeFuelDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dsTypeFuel)).BeginInit();
@@ -46,9 +46,9 @@ namespace ERespondent
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
@@ -62,9 +62,9 @@ namespace ERespondent
             // 
             // dataGridView1
             // 
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -79,26 +79,6 @@ namespace ERespondent
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.Size = new System.Drawing.Size(771, 442);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // codeRecordDataGridViewTextBoxColumn
-            // 
-            this.codeRecordDataGridViewTextBoxColumn.DataPropertyName = "CodeRecord";
-            this.codeRecordDataGridViewTextBoxColumn.HeaderText = "CodeRecord";
-            this.codeRecordDataGridViewTextBoxColumn.Name = "codeRecordDataGridViewTextBoxColumn";
-            this.codeRecordDataGridViewTextBoxColumn.ReadOnly = true;
-            this.codeRecordDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // codeTypeFuelDataGridViewTextBoxColumn
-            // 
-            this.codeTypeFuelDataGridViewTextBoxColumn.DataPropertyName = "CodeTypeFuel";
-            this.codeTypeFuelDataGridViewTextBoxColumn.HeaderText = "Код вида топлива и энергии";
-            this.codeTypeFuelDataGridViewTextBoxColumn.Name = "codeTypeFuelDataGridViewTextBoxColumn";
-            // 
-            // typeFuelDataGridViewTextBoxColumn
-            // 
-            this.typeFuelDataGridViewTextBoxColumn.DataPropertyName = "TypeFuel";
-            this.typeFuelDataGridViewTextBoxColumn.HeaderText = "Вид топлива и энергии";
-            this.typeFuelDataGridViewTextBoxColumn.Name = "typeFuelDataGridViewTextBoxColumn";
             // 
             // dsTypeFuel
             // 
@@ -118,7 +98,7 @@ namespace ERespondent
             // sqlInsertCommand1
             // 
             this.sqlInsertCommand1.CommandText = "INSERT INTO [TypeFuelEnergy] ([CodeTypeFuel], [TypeFuel]) VALUES (@CodeTypeFuel, " +
-    "@TypeFuel)";
+                "@TypeFuel)";
             this.sqlInsertCommand1.Connection = this.sqlConnection1;
             this.sqlInsertCommand1.Parameters.AddRange(new System.Data.SqlClient.SqlParameter[] {
             new System.Data.SqlClient.SqlParameter("@CodeTypeFuel", System.Data.SqlDbType.Int, 0, "CodeTypeFuel"),
@@ -133,6 +113,27 @@ namespace ERespondent
                         new System.Data.Common.DataColumnMapping("CodeRecord", "CodeRecord"),
                         new System.Data.Common.DataColumnMapping("CodeTypeFuel", "CodeTypeFuel"),
                         new System.Data.Common.DataColumnMapping("TypeFuel", "TypeFuel")})});
+            // 
+            // codeRecordDataGridViewTextBoxColumn
+            // 
+            this.codeRecordDataGridViewTextBoxColumn.DataPropertyName = "CodeRecord";
+            this.codeRecordDataGridViewTextBoxColumn.HeaderText = "CodeRecord";
+            this.codeRecordDataGridViewTextBoxColumn.Name = "codeRecordDataGridViewTextBoxColumn";
+            this.codeRecordDataGridViewTextBoxColumn.ReadOnly = true;
+            this.codeRecordDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // codeTypeFuelDataGridViewTextBoxColumn
+            // 
+            this.codeTypeFuelDataGridViewTextBoxColumn.DataPropertyName = "CodeTypeFuel";
+            this.codeTypeFuelDataGridViewTextBoxColumn.FillWeight = 30F;
+            this.codeTypeFuelDataGridViewTextBoxColumn.HeaderText = "Код вида топлива и энергии";
+            this.codeTypeFuelDataGridViewTextBoxColumn.Name = "codeTypeFuelDataGridViewTextBoxColumn";
+            // 
+            // typeFuelDataGridViewTextBoxColumn
+            // 
+            this.typeFuelDataGridViewTextBoxColumn.DataPropertyName = "TypeFuel";
+            this.typeFuelDataGridViewTextBoxColumn.HeaderText = "Вид топлива и энергии";
+            this.typeFuelDataGridViewTextBoxColumn.Name = "typeFuelDataGridViewTextBoxColumn";
             // 
             // TypeFuel
             // 

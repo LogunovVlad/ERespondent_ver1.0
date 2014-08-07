@@ -672,18 +672,18 @@ namespace ERespondent.Excel
             workSheet.Cells("F6").Value = grid1[4, 2].Value;
             workSheet.Cells("F7").Value = grid1[4, 3].Value;
             workSheet.Cells("F8").Value = grid1[4, 4].Value;
-
-            workSheet.Cells("G5").Value = Convert.ToString(Convert.ToDouble(grid1[5, 1].Value) * 100) + "%";
-            workSheet.Cells("G6").Value = Convert.ToDouble(grid1[5, 2].Value) * 100 + "%";
-            workSheet.Cells("G7").Value = Convert.ToDouble(grid1[5, 3].Value) * 100 + "%";
-            workSheet.Cells("G8").Value = Convert.ToDouble(grid1[5, 4].Value) * 100 + "%";
+            //знаки после запятой доделать
+            workSheet.Cells("G5").Value = Math.Round((Convert.ToDouble(grid1[5, 1].Value) * 100), 2) + "%";
+            workSheet.Cells("G6").Value = Math.Round((Convert.ToDouble(grid1[5, 2].Value) * 100), 2) + "%";
+            workSheet.Cells("G7").Value = Math.Round((Convert.ToDouble(grid1[5, 3].Value) * 100), 2) + "%";
+            workSheet.Cells("G8").Value = Math.Round((Convert.ToDouble(grid1[5, 4].Value) * 100), 2) + "%";
 
             workSheet.Cells("J6").Value = grid2[1, 1].Value;
             workSheet.Cells("K6").Value = grid2[2, 1].Value;
 
 
             int rCount = grid3.RowCount + 1;
-            var sheetSection1 = workSheet.Range("B14:D" + (rCount+10));
+            var sheetSection1 = workSheet.Range("B14:D" + (rCount + 10));
 
             sheetSection1.Style.Alignment.Horizontal = XLAlignmentHorizontalValues.Center;
             sheetSection1.Style.Alignment.Vertical = XLAlignmentVerticalValues.Center;
@@ -691,10 +691,10 @@ namespace ERespondent.Excel
             sheetSection1.Style.Font.FontSize = 9;
             sheetSection1.Style.Font.FontName = "Times New Roman";
             sheetSection1.Style.Border.OutsideBorder = XLBorderStyleValues.Thin;
-            for(int i=1; i<grid3.RowCount;i++)
+            for (int i = 1; i < grid3.RowCount; i++)
             {
                 int indexRow = 13;
-                workSheet.Cells("B" + (indexRow + i)).Value =grid3[0, i].Value;
+                workSheet.Cells("B" + (indexRow + i)).Value = grid3[0, i].Value;
                 workSheet.Cells("C" + (indexRow + i)).Value = grid3[1, i].Value;
                 workSheet.Cells("D" + (indexRow + i)).Value = grid3[2, i].Value;
             }

@@ -30,7 +30,7 @@ namespace ERespondent
                 //заполянем комбобоксы для раздела 1 
                 FillComboBoxLinq(Section1_dataGrid1ColumnV, "DestinationSave");
                 FillComboBoxLinq(Section1_dataGrid2ColumnV, "DestinationSave");
-                FillComboBoxLinq(Section1_dataGrid3ColumnV, "DestinationSave");                
+                FillComboBoxLinq(Section1_dataGrid3ColumnV, "DestinationSave");
                 //заполянем комбобоксы для раздела 2
                 FillComboBoxLinq(Section2_dataGrid1ColumnV, "DestinationSave");
                 FillComboBoxLinq(Section2_dataGrid2ColumnV, "DestinationSave");
@@ -51,17 +51,16 @@ namespace ERespondent
                 statusStrip1.Items[0].Text = @"Отсутствует подключение к базе данных!";
             }
 
-            //для первого раздела
+            /* Для изменения размеров столбцов для первого раздела */
             Section1_dataGridViewHeader1_1.ColumnWidthChanged += dataGridView1_ColumnWidthChanged;
 
             //для второго раздела
             Section2_dataGridViewHeader2_1.ColumnWidthChanged += dataGridViewSection2_ColumnWidthChanged;
 
-
-          /*  Section2_dataGridViewHeader2_2.ColumnWidthChanged += dataGridViewSection2_ColumnWidthChanged;
-            Section2_dataGridView1.ColumnWidthChanged += dataGridViewSection2_ColumnWidthChanged;
-            Section2_dataGridView2.ColumnWidthChanged += dataGridViewSection2_ColumnWidthChanged;
-            Section2_dataGridView3.ColumnWidthChanged += dataGridViewSection2_ColumnWidthChanged;*/
+            /*  Section2_dataGridViewHeader2_2.ColumnWidthChanged += dataGridViewSection2_ColumnWidthChanged;
+              Section2_dataGridView1.ColumnWidthChanged += dataGridViewSection2_ColumnWidthChanged;
+              Section2_dataGridView2.ColumnWidthChanged += dataGridViewSection2_ColumnWidthChanged;
+              Section2_dataGridView3.ColumnWidthChanged += dataGridViewSection2_ColumnWidthChanged;*/
         }
 
         #region РАЗДЕЛ 1 (tab1)
@@ -240,7 +239,7 @@ namespace ERespondent
         /// <param name="e"></param>
         private void dataGridView1_ColumnWidthChanged(object sender, DataGridViewColumnEventArgs e)
         {
-            for(int i=0; i<Section1_dataGridViewHeader1_1.ColumnCount;i++)
+            for (int i = 0; i < Section1_dataGridViewHeader1_1.ColumnCount; i++)
             {
                 Section1_dataGridView1.Columns[i].Width = Section1_dataGridViewHeader1_1.Columns[i].Width;
                 Section1_dataGridView2.Columns[i].Width = Section1_dataGridViewHeader1_1.Columns[i].Width;
@@ -256,7 +255,7 @@ namespace ERespondent
         }
         #endregion
 
-        #region dataGridView3 - 
+        #region dataGridView3 -
         /// <summary>
         /// Для datagridView 3 нужно указать столбца которые нельзя редактировать
         /// </summary>
@@ -368,12 +367,12 @@ namespace ERespondent
                 AutoTotalSumm.FillGrid3(grid, 6);
             }
         }
-        #endregion 
+        #endregion
 
         #region Главное меню
         private void справочникКодовОКПООрганизацийToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            _okpoForm = new OKPO {Owner = this};
+            _okpoForm = new OKPO { Owner = this };
             //указываем владельца
             _okpoForm.Show();
         }
@@ -392,7 +391,7 @@ namespace ERespondent
 
         private void видыТопливаИЭнергииToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            _formTypeFuel = new TypeFuel {Owner = this};
+            _formTypeFuel = new TypeFuel { Owner = this };
             _formTypeFuel.Show();
         }
 
@@ -576,7 +575,7 @@ namespace ERespondent
         /// <param name="boxColumn">Столбец, в ячейках которого располагается выпадающий список</param>
         /// <param name="nameTable">Имя таблицы из которой берем данные для заполнения выпадающего списка</param>
         private void FillComboBoxLinq(DataGridViewComboBoxColumn boxColumn, string nameTable)
-        {         
+        {
             _db = new E_RespondentDataContext();
             switch (nameTable)
             {
@@ -799,7 +798,7 @@ namespace ERespondent
         /// <param name="e"></param>
         private void dataGridViewSection2_ColumnWidthChanged(object sender, DataGridViewColumnEventArgs e)
         {
-            for(int i=0; i<Section2_dataGridViewHeader2_1.ColumnCount;i++)
+            for (int i = 0; i < Section2_dataGridViewHeader2_1.ColumnCount; i++)
             {
                 Section2_dataGridView1.Columns[i].Width = Section2_dataGridViewHeader2_1.Columns[i].Width;
                 Section2_dataGridView2.Columns[i].Width = Section2_dataGridViewHeader2_1.Columns[i].Width;
@@ -884,7 +883,7 @@ namespace ERespondent
 
 
         /// <summary>
-        /// Заполнение таблицы 3 (Раздел 3)
+        /// Заполнение таблицы 3, 4, 5 (РАЗДЕЛ 3)
         /// </summary>
         private void FillSection3Table1()
         {
@@ -964,10 +963,7 @@ namespace ERespondent
             #endregion
         }
 
-
-
         #endregion
-
 
         /// <summary>
         /// Устанавливает размер формы по размерам разрешения экрана
@@ -979,19 +975,25 @@ namespace ERespondent
             this.Location = new Point(0, 0);
             this.Height = heightScreen;
             this.Width = widthScreen;
-        }      
+        }
 
         private void экспортВExcelToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Section3_T3.EndEdit();
-            Section3_T4.EndEdit();
-            Section3_T5.EndEdit();
+            //завершает режим редактирования ячейки
+            Section3_T3.EditingPanel.Hide();
+            Section3_T4.EditingPanel.Hide();
+            Section3_T5.EditingPanel.Hide();
             ExcelExport.InitSection1(Section1_dataGridView1, Section1_dataGridView2, Section1_dataGridView3);
             ExcelExport.InitSection2(Section2_dataGridView1, Section2_dataGridView2, Section2_dataGridView3);
             ExcelExport.InitSection3(Section3_T3, Section3_T4, Section3_T5);
         }
 
-     
+        private void создатьНовыйToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CreateNewReport formRep=new CreateNewReport();
+            formRep.Show();
+        }
+
     }
 }
 

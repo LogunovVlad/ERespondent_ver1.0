@@ -48,12 +48,12 @@ namespace ERespondent
             {
                 //определим индекс изменяемой строки
                 int indexRow = formOKPO.dataGridView1.CurrentRow.Index;
-                if(txtOkpo.Text.Length!=12)
+                if (txtOkpo.Text.Length != 12)
                 {
                     MessageBox.Show(@"Код должен состоять из 12 символов!", @"Внимание!", MessageBoxButtons.OK,
                                MessageBoxIcon.Warning);
                     txtOkpo.BackColor = Color.LightYellow;
-                    txtOkpo.Select();  
+                    txtOkpo.Select();
                 }
                 else
                 {
@@ -61,8 +61,9 @@ namespace ERespondent
                     formOKPO._dsOKPO.Tables["OKPO"].Rows[indexRow]["CodeOKPO"] = txtOkpo.Text.ToString();
                     formOKPO._dsOKPO.Tables["OKPO"].Rows[indexRow]["NameOrganization"] = txtName.Text.ToString();
 
-                    formOKPO._daOKPO.Update(formOKPO._dsOKPO);                       
-                }                
+                    formOKPO._daOKPO.Update(formOKPO._dsOKPO);
+                }
+                this.Close();
             }
             catch (Exception ex)
             {
@@ -75,38 +76,50 @@ namespace ERespondent
         /// </summary>        
         private void ClickAdd(object sender, EventArgs e)
         {
-            if (txtOkpo.Text.Length != 12)
+            try
             {
-                MessageBox.Show(@"Код должен состоять из 12 символов!", @"Внимание!", MessageBoxButtons.OK,
-                                MessageBoxIcon.Warning);
-                txtOkpo.BackColor = Color.LightYellow;
-                txtOkpo.Select();                
-            }
-            else
-            {
-                txtOkpo.BackColor = Color.White;
-                try
-                {
-                    DataTable tblOKPO;
-                    tblOKPO = formOKPO._dsOKPO.Tables["OKPO"];
-                    DataRow newOKPORow;
-                    newOKPORow = tblOKPO.NewRow();
-                    newOKPORow["CodeOKPO"] = txtOkpo.Text;
-                    newOKPORow["NameOrganization"] = txtName.Text;
-                    tblOKPO.Rows.Add(newOKPORow);
+                DataTable tblOKPO;
+                tblOKPO = formOKPO._dsOKPO.Tables["OKPO"];
+                DataRow newOKPORow;
+                newOKPORow = tblOKPO.NewRow();
+                newOKPORow["CodeOKPO"] = txtOkpo.Text;
+                newOKPORow["NameOrganization"] = txtName.Text;
+                tblOKPO.Rows.Add(newOKPORow);
 
-                    formOKPO._daOKPO.Update(formOKPO._dsOKPO);
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
+                formOKPO._daOKPO.Update(formOKPO._dsOKPO);
+                this.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
 
         private void BtnCancelClick(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        /// <summary>
+        /// Событие происходит при изменении свойста TextBox.Text
+        /// (для вывода уведомления о том, что код ОКПО должен быть 12 символов)
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtOkpo_TextChanged(object sender, EventArgs e)
+        {
+            if (((TextBox)sender).Text.Length != 12)
+            {
+                labelAlert12.ForeColor = Color.Red;
+                labelAlert12.Visible = true;
+                btnOk.Enabled = false;
+            }
+            else
+            {
+                labelAlert12.Visible = false;
+                btnOk.Enabled = true;
+            }
+
         }
 
     }

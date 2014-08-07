@@ -37,13 +37,14 @@ namespace ERespondent
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle13 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.MainMenuStrip = new System.Windows.Forms.MenuStrip();
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.сохранитьКакToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -247,21 +248,25 @@ namespace ERespondent
             this.ColumnSectionH1_10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TabSection3 = new System.Windows.Forms.TabPage();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.Section3_labelT5 = new System.Windows.Forms.Label();
-            this.Section3_labelT4 = new System.Windows.Forms.Label();
-            this.Section3_labelT3 = new System.Windows.Forms.Label();
-            this.Section3_PanelT4 = new System.Windows.Forms.Panel();
-            this.Section3_T4 = new System.Windows.Forms.DataGridView();
-            this.Column21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.Section3_PanelT5 = new System.Windows.Forms.Panel();
             this.Section3_T5 = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Section3_labelT5 = new System.Windows.Forms.Label();
             this.Section3_PanelT3 = new System.Windows.Forms.Panel();
             this.Section3_T3 = new System.Windows.Forms.DataGridView();
+            this.Section3_labelT3 = new System.Windows.Forms.Label();
+            this.Section3_PanelT4 = new System.Windows.Forms.Panel();
+            this.Section3_T4 = new System.Windows.Forms.DataGridView();
+            this.Section3_labelT4 = new System.Windows.Forms.Label();
+            this.создатьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.создатьНовыйToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.создатьНаПодобиеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Column21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column23 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -303,12 +308,13 @@ namespace ERespondent
             ((System.ComponentModel.ISupportInitialize)(this.Section2_dataGridViewHeader2_1)).BeginInit();
             this.TabSection3.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.Section3_PanelT4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Section3_T4)).BeginInit();
+            this.tableLayoutPanel2.SuspendLayout();
             this.Section3_PanelT5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Section3_T5)).BeginInit();
             this.Section3_PanelT3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Section3_T3)).BeginInit();
+            this.Section3_PanelT4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Section3_T4)).BeginInit();
             this.SuspendLayout();
             // 
             // MainMenuStrip
@@ -330,6 +336,7 @@ namespace ERespondent
             // файлToolStripMenuItem
             // 
             this.файлToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.создатьToolStripMenuItem,
             this.сохранитьКакToolStripMenuItem,
             this.выходToolStripMenuItem});
             this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
@@ -2020,52 +2027,159 @@ namespace ERespondent
             this.TabSection3.Controls.Add(this.panel7);
             this.TabSection3.Location = new System.Drawing.Point(4, 22);
             this.TabSection3.Name = "TabSection3";
-            this.TabSection3.Size = new System.Drawing.Size(1261, 739);
+            this.TabSection3.Size = new System.Drawing.Size(1276, 739);
             this.TabSection3.TabIndex = 2;
             this.TabSection3.Text = "РАЗДЕЛ III";
             this.TabSection3.ToolTipText = "ХОД ВЫПОЛНЕНИЯ ПРОГРАММЫ (ПЛАНА МЕРОПРИЯТИЙ) ПО ЭНЕРГОСБЕРЕЖЕНИЮ";
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.Section3_labelT5);
-            this.panel7.Controls.Add(this.Section3_labelT4);
-            this.panel7.Controls.Add(this.Section3_labelT3);
-            this.panel7.Controls.Add(this.Section3_PanelT4);
-            this.panel7.Controls.Add(this.Section3_PanelT5);
-            this.panel7.Controls.Add(this.Section3_PanelT3);
+            this.panel7.Controls.Add(this.tableLayoutPanel2);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1261, 739);
+            this.panel7.Size = new System.Drawing.Size(1276, 739);
             this.panel7.TabIndex = 0;
+            // 
+            // tableLayoutPanel2
+            // 
+            this.tableLayoutPanel2.ColumnCount = 2;
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 61.91222F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 38.08778F));
+            this.tableLayoutPanel2.Controls.Add(this.Section3_PanelT3, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.Section3_PanelT5, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.Section3_PanelT4, 1, 0);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel2.Name = "tableLayoutPanel2";
+            this.tableLayoutPanel2.RowCount = 2;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1276, 739);
+            this.tableLayoutPanel2.TabIndex = 8;
+            // 
+            // Section3_PanelT5
+            // 
+            this.tableLayoutPanel2.SetColumnSpan(this.Section3_PanelT5, 2);
+            this.Section3_PanelT5.Controls.Add(this.Section3_T5);
+            this.Section3_PanelT5.Controls.Add(this.Section3_labelT5);
+            this.Section3_PanelT5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Section3_PanelT5.Location = new System.Drawing.Point(3, 372);
+            this.Section3_PanelT5.Name = "Section3_PanelT5";
+            this.Section3_PanelT5.Size = new System.Drawing.Size(1270, 364);
+            this.Section3_PanelT5.TabIndex = 2;
+            // 
+            // Section3_T5
+            // 
+            this.Section3_T5.AllowUserToResizeColumns = false;
+            this.Section3_T5.AllowUserToResizeRows = false;
+            this.Section3_T5.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.Section3_T5.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Section3_T5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle14.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle14.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle14.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle14.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle14.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle14.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Section3_T5.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle14;
+            this.Section3_T5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Section3_T5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3});
+            this.Section3_T5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Section3_T5.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
+            this.Section3_T5.Location = new System.Drawing.Point(0, 19);
+            this.Section3_T5.Name = "Section3_T5";
+            this.Section3_T5.RowHeadersVisible = false;
+            this.Section3_T5.Size = new System.Drawing.Size(1270, 345);
+            this.Section3_T5.TabIndex = 2;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.FillWeight = 30.45685F;
+            this.dataGridViewTextBoxColumn1.HeaderText = "Номер пункта в программе (плане мероприятий)";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.FillWeight = 134.7716F;
+            this.dataGridViewTextBoxColumn2.HeaderText = "Наименование мероприятия";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.FillWeight = 134.7716F;
+            this.dataGridViewTextBoxColumn3.HeaderText = "Причины невыполнения мероприятия, принимаемые меры по устранению отставания от пл" +
+                "ановых показателей";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // Section3_labelT5
             // 
+            this.Section3_labelT5.Dock = System.Windows.Forms.DockStyle.Top;
             this.Section3_labelT5.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Section3_labelT5.ForeColor = System.Drawing.Color.Black;
-            this.Section3_labelT5.Location = new System.Drawing.Point(5, 310);
+            this.Section3_labelT5.Location = new System.Drawing.Point(0, 0);
             this.Section3_labelT5.Name = "Section3_labelT5";
-            this.Section3_labelT5.Size = new System.Drawing.Size(842, 19);
+            this.Section3_labelT5.Size = new System.Drawing.Size(1270, 19);
             this.Section3_labelT5.TabIndex = 7;
             this.Section3_labelT5.Text = "Таблица 5. Причины невыполнения мероприятий программы (плана мероприятий) по энер" +
                 "госбережению \r\n";
             // 
-            // Section3_labelT4
+            // Section3_PanelT3
             // 
-            this.Section3_labelT4.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.Section3_labelT4.ForeColor = System.Drawing.Color.Black;
-            this.Section3_labelT4.Location = new System.Drawing.Point(903, 0);
-            this.Section3_labelT4.Name = "Section3_labelT4";
-            this.Section3_labelT4.Size = new System.Drawing.Size(456, 32);
-            this.Section3_labelT4.TabIndex = 6;
-            this.Section3_labelT4.Text = "Таблица 4. Выполнение установленного годового задания по экономии ТЭР.";
+            this.Section3_PanelT3.Controls.Add(this.Section3_T3);
+            this.Section3_PanelT3.Controls.Add(this.Section3_labelT3);
+            this.Section3_PanelT3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Section3_PanelT3.Location = new System.Drawing.Point(3, 3);
+            this.Section3_PanelT3.Name = "Section3_PanelT3";
+            this.Section3_PanelT3.Size = new System.Drawing.Size(783, 363);
+            this.Section3_PanelT3.TabIndex = 1;
+            // 
+            // Section3_T3
+            // 
+            this.Section3_T3.AllowUserToAddRows = false;
+            this.Section3_T3.AllowUserToDeleteRows = false;
+            this.Section3_T3.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.Section3_T3.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.Section3_T3.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Section3_T3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            this.Section3_T3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.Section3_T3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.Column1,
+            this.Column16,
+            this.Column17,
+            this.Column18,
+            this.Column19,
+            this.Column20});
+            this.Section3_T3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Section3_T3.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
+            this.Section3_T3.Location = new System.Drawing.Point(0, 16);
+            this.Section3_T3.Name = "Section3_T3";
+            this.Section3_T3.RowHeadersVisible = false;
+            this.Section3_T3.Size = new System.Drawing.Size(783, 347);
+            this.Section3_T3.TabIndex = 0;
+            this.Section3_T3.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.Section3_T3_CellEndEdit);
             // 
             // Section3_labelT3
             // 
             this.Section3_labelT3.AutoSize = true;
+            this.Section3_labelT3.Dock = System.Windows.Forms.DockStyle.Top;
             this.Section3_labelT3.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.Section3_labelT3.ForeColor = System.Drawing.Color.Black;
-            this.Section3_labelT3.Location = new System.Drawing.Point(4, 12);
+            this.Section3_labelT3.Location = new System.Drawing.Point(0, 0);
             this.Section3_labelT3.Name = "Section3_labelT3";
             this.Section3_labelT3.Size = new System.Drawing.Size(633, 16);
             this.Section3_labelT3.TabIndex = 5;
@@ -2073,12 +2187,12 @@ namespace ERespondent
             // 
             // Section3_PanelT4
             // 
-            this.Section3_PanelT4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
             this.Section3_PanelT4.Controls.Add(this.Section3_T4);
-            this.Section3_PanelT4.Location = new System.Drawing.Point(906, 35);
+            this.Section3_PanelT4.Controls.Add(this.Section3_labelT4);
+            this.Section3_PanelT4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Section3_PanelT4.Location = new System.Drawing.Point(792, 3);
             this.Section3_PanelT4.Name = "Section3_PanelT4";
-            this.Section3_PanelT4.Size = new System.Drawing.Size(347, 297);
+            this.Section3_PanelT4.Size = new System.Drawing.Size(481, 363);
             this.Section3_PanelT4.TabIndex = 3;
             // 
             // Section3_T4
@@ -2088,14 +2202,14 @@ namespace ERespondent
             this.Section3_T4.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.Section3_T4.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.Section3_T4.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Section3_T4.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle15.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle15.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            dataGridViewCellStyle15.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle15.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle15.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle15.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Section3_T4.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle15;
             this.Section3_T4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.Section3_T4.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column21,
@@ -2103,14 +2217,48 @@ namespace ERespondent
             this.Column23});
             this.Section3_T4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Section3_T4.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
-            this.Section3_T4.Location = new System.Drawing.Point(0, 0);
+            this.Section3_T4.Location = new System.Drawing.Point(0, 32);
             this.Section3_T4.Name = "Section3_T4";
             this.Section3_T4.RowHeadersVisible = false;
-            this.Section3_T4.Size = new System.Drawing.Size(347, 297);
+            this.Section3_T4.Size = new System.Drawing.Size(481, 331);
             this.Section3_T4.TabIndex = 0;
+            // 
+            // Section3_labelT4
+            // 
+            this.Section3_labelT4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Section3_labelT4.Font = new System.Drawing.Font("MS Reference Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.Section3_labelT4.ForeColor = System.Drawing.Color.Black;
+            this.Section3_labelT4.Location = new System.Drawing.Point(0, 0);
+            this.Section3_labelT4.Name = "Section3_labelT4";
+            this.Section3_labelT4.Size = new System.Drawing.Size(481, 32);
+            this.Section3_labelT4.TabIndex = 6;
+            this.Section3_labelT4.Text = "Таблица 4. Выполнение установленного годового задания по экономии ТЭР.";
+            // 
+            // создатьToolStripMenuItem
+            // 
+            this.создатьToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.создатьНовыйToolStripMenuItem,
+            this.создатьНаПодобиеToolStripMenuItem});
+            this.создатьToolStripMenuItem.Name = "создатьToolStripMenuItem";
+            this.создатьToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.создатьToolStripMenuItem.Text = "Создать...";
+            // 
+            // создатьНовыйToolStripMenuItem
+            // 
+            this.создатьНовыйToolStripMenuItem.Name = "создатьНовыйToolStripMenuItem";
+            this.создатьНовыйToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.создатьНовыйToolStripMenuItem.Text = "Создать новый";
+            this.создатьНовыйToolStripMenuItem.Click += new System.EventHandler(this.создатьНовыйToolStripMenuItem_Click);
+            // 
+            // создатьНаПодобиеToolStripMenuItem
+            // 
+            this.создатьНаПодобиеToolStripMenuItem.Name = "создатьНаПодобиеToolStripMenuItem";
+            this.создатьНаПодобиеToolStripMenuItem.Size = new System.Drawing.Size(183, 22);
+            this.создатьНаПодобиеToolStripMenuItem.Text = "Создать на подобие";
             // 
             // Column21
             // 
+            this.Column21.FillWeight = 50F;
             this.Column21.HeaderText = "Код строки";
             this.Column21.Name = "Column21";
             this.Column21.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
@@ -2127,162 +2275,54 @@ namespace ERespondent
             this.Column23.Name = "Column23";
             this.Column23.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
-            // Section3_PanelT5
-            // 
-            this.Section3_PanelT5.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.Section3_PanelT5.Controls.Add(this.Section3_T5);
-            this.Section3_PanelT5.Location = new System.Drawing.Point(8, 332);
-            this.Section3_PanelT5.Name = "Section3_PanelT5";
-            this.Section3_PanelT5.Size = new System.Drawing.Size(1245, 404);
-            this.Section3_PanelT5.TabIndex = 2;
-            // 
-            // Section3_T5
-            // 
-            this.Section3_T5.AllowUserToResizeColumns = false;
-            this.Section3_T5.AllowUserToResizeRows = false;
-            this.Section3_T5.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Section3_T5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Section3_T5.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
-            this.Section3_T5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Section3_T5.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3});
-            this.Section3_T5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Section3_T5.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
-            this.Section3_T5.Location = new System.Drawing.Point(0, 0);
-            this.Section3_T5.Name = "Section3_T5";
-            this.Section3_T5.RowHeadersVisible = false;
-            this.Section3_T5.Size = new System.Drawing.Size(1245, 404);
-            this.Section3_T5.TabIndex = 2;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.FillWeight = 30.45685F;
-            this.dataGridViewTextBoxColumn1.HeaderText = "Номер пункта в программе (плане мероприятий)";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.dataGridViewTextBoxColumn1.Width = 137;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.FillWeight = 134.7716F;
-            this.dataGridViewTextBoxColumn2.HeaderText = "Наименование мероприятия";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.dataGridViewTextBoxColumn2.Width = 500;
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.FillWeight = 134.7716F;
-            this.dataGridViewTextBoxColumn3.HeaderText = "Причины невыполнения мероприятия, принимаемые меры по устранению отставания от пл" +
-                "ановых показателей";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.dataGridViewTextBoxColumn3.Width = 590;
-            // 
-            // Section3_PanelT3
-            // 
-            this.Section3_PanelT3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
-                        | System.Windows.Forms.AnchorStyles.Left)
-                        | System.Windows.Forms.AnchorStyles.Right)));
-            this.Section3_PanelT3.Controls.Add(this.Section3_T3);
-            this.Section3_PanelT3.Location = new System.Drawing.Point(8, 35);
-            this.Section3_PanelT3.Name = "Section3_PanelT3";
-            this.Section3_PanelT3.Size = new System.Drawing.Size(877, 220);
-            this.Section3_PanelT3.TabIndex = 1;
-            // 
-            // Section3_T3
-            // 
-            this.Section3_T3.AllowUserToAddRows = false;
-            this.Section3_T3.AllowUserToDeleteRows = false;
-            this.Section3_T3.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
-            this.Section3_T3.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Section3_T3.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
-            this.Section3_T3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.Section3_T3.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column16,
-            this.Column17,
-            this.Column18,
-            this.Column19,
-            this.Column20});
-            this.Section3_T3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Section3_T3.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
-            this.Section3_T3.Location = new System.Drawing.Point(0, 0);
-            this.Section3_T3.Name = "Section3_T3";
-            this.Section3_T3.RowHeadersVisible = false;
-            this.Section3_T3.Size = new System.Drawing.Size(877, 220);
-            this.Section3_T3.TabIndex = 0;
-            this.Section3_T3.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.Section3_T3_CellEndEdit);
-            // 
             // Column1
             // 
-            dataGridViewCellStyle12.NullValue = null;
-            this.Column1.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle10.NullValue = null;
+            this.Column1.DefaultCellStyle = dataGridViewCellStyle10;
+            this.Column1.FillWeight = 160F;
             this.Column1.HeaderText = "Наименование показателя";
             this.Column1.Name = "Column1";
             this.Column1.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column1.Width = 149;
             // 
             // Column16
             // 
+            this.Column16.FillWeight = 50F;
             this.Column16.HeaderText = "Код строки";
             this.Column16.Name = "Column16";
             this.Column16.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column16.Width = 148;
             // 
             // Column17
             // 
+            this.Column17.FillWeight = 50F;
             this.Column17.HeaderText = "Единица измерения";
             this.Column17.Name = "Column17";
             this.Column17.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column17.Width = 149;
             // 
             // Column18
             // 
-            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Column18.DefaultCellStyle = dataGridViewCellStyle13;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Column18.DefaultCellStyle = dataGridViewCellStyle11;
             this.Column18.HeaderText = "По плану";
             this.Column18.Name = "Column18";
             this.Column18.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column18.Width = 148;
             // 
             // Column19
             // 
-            dataGridViewCellStyle14.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.Column19.DefaultCellStyle = dataGridViewCellStyle14;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.Column19.DefaultCellStyle = dataGridViewCellStyle12;
             this.Column19.HeaderText = "Фактически";
             this.Column19.Name = "Column19";
             this.Column19.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column19.Width = 149;
             // 
             // Column20
             // 
-            dataGridViewCellStyle15.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle15.Format = "p";
-            dataGridViewCellStyle15.NullValue = null;
-            this.Column20.DefaultCellStyle = dataGridViewCellStyle15;
+            dataGridViewCellStyle13.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle13.Format = "p";
+            dataGridViewCellStyle13.NullValue = null;
+            this.Column20.DefaultCellStyle = dataGridViewCellStyle13;
             this.Column20.HeaderText = "Процент выполнения (гр.2:гр.1х100)";
             this.Column20.Name = "Column20";
             this.Column20.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
-            this.Column20.Width = 148;
             // 
             // MainForm
             // 
@@ -2293,6 +2333,7 @@ namespace ERespondent
             this.Controls.Add(this.Section3_TabControl);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.MainMenuStrip);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "Respondent";
@@ -2340,13 +2381,14 @@ namespace ERespondent
             ((System.ComponentModel.ISupportInitialize)(this.Section2_dataGridViewHeader2_1)).EndInit();
             this.TabSection3.ResumeLayout(false);
             this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
-            this.Section3_PanelT4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.Section3_T4)).EndInit();
+            this.tableLayoutPanel2.ResumeLayout(false);
             this.Section3_PanelT5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Section3_T5)).EndInit();
             this.Section3_PanelT3.ResumeLayout(false);
+            this.Section3_PanelT3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Section3_T3)).EndInit();
+            this.Section3_PanelT4.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Section3_T4)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2477,21 +2519,6 @@ namespace ERespondent
         private System.Windows.Forms.DataGridViewTextBoxColumn ColumnSectionH1_10;
         private System.Windows.Forms.TabPage TabSection3;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label Section3_labelT5;
-        private System.Windows.Forms.Label Section3_labelT4;
-        private System.Windows.Forms.Label Section3_labelT3;
-        private System.Windows.Forms.Panel Section3_PanelT4;
-        private System.Windows.Forms.DataGridView Section3_T4;
-        private System.Windows.Forms.Panel Section3_PanelT5;
-        private System.Windows.Forms.DataGridView Section3_T5;
-        private System.Windows.Forms.Panel Section3_PanelT3;
-        private System.Windows.Forms.DataGridView Section3_T3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column16;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column17;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column18;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column19;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column20;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DataGridView Section1_dataGridViewHeader1_1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column24;
@@ -2572,12 +2599,31 @@ namespace ERespondent
         private System.Windows.Forms.Panel Section1Panel2;
         private System.Windows.Forms.CheckBox checkBoxTable2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column21;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column22;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column23;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
+        private System.Windows.Forms.Panel Section3_PanelT3;
+        private System.Windows.Forms.DataGridView Section3_T3;
+        private System.Windows.Forms.Label Section3_labelT3;
+        private System.Windows.Forms.Panel Section3_PanelT5;
+        private System.Windows.Forms.DataGridView Section3_T5;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.Label Section3_labelT5;
+        private System.Windows.Forms.Panel Section3_PanelT4;
+        private System.Windows.Forms.DataGridView Section3_T4;
+        private System.Windows.Forms.Label Section3_labelT4;
+        private System.Windows.Forms.ToolStripMenuItem создатьToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem создатьНовыйToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem создатьНаПодобиеToolStripMenuItem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column21;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column22;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column23;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column16;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column17;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column18;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column19;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column20;
     }
 }
 

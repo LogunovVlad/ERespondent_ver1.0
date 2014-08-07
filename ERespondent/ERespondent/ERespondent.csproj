@@ -89,6 +89,12 @@
     <Compile Include="CheckData\ControlFunction.cs" />
     <Compile Include="Config\Configuration.cs" />
     <Compile Include="ConnectionDB.cs" />
+    <Compile Include="CreateNewReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateNewReport.Designer.cs">
+      <DependentUpon>CreateNewReport.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataSet\DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -159,6 +165,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CheckData\CheckProtocol.resx">
       <DependentUpon>CheckProtocol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateNewReport.resx">
+      <DependentUpon>CreateNewReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DirectionEnergySave.resx">
       <DependentUpon>DirectionEnergySave.cs</DependentUpon>

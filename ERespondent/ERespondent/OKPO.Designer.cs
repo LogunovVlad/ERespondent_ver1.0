@@ -36,6 +36,7 @@ namespace ERespondent
             this.btrDel = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this._dsOKPO = new ERespondent.DataSet._dsOKPO();
             this.btnCancel = new System.Windows.Forms.Button();
             this.sqlSelectCommand1 = new System.Data.SqlClient.SqlCommand();
             this._connectionOKPO = new System.Data.SqlClient.SqlConnection();
@@ -43,7 +44,6 @@ namespace ERespondent
             this.sqlUpdateCommand1 = new System.Data.SqlClient.SqlCommand();
             this.sqlDeleteCommand1 = new System.Data.SqlClient.SqlCommand();
             this._daOKPO = new System.Data.SqlClient.SqlDataAdapter();
-            this._dsOKPO = new ERespondent.DataSet._dsOKPO();
             this.codeOKPODataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nameOrganizationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.codeRecordDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,9 +55,9 @@ namespace ERespondent
             // 
             // tableLayoutPanel1
             // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.tableLayoutPanel2, 0, 0);
@@ -132,9 +132,9 @@ namespace ERespondent
             // 
             this.dataGridView1.AllowUserToAddRows = false;
             this.dataGridView1.AllowUserToResizeRows = false;
-            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.dataGridView1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom)
+                        | System.Windows.Forms.AnchorStyles.Left)
+                        | System.Windows.Forms.AnchorStyles.Right)));
             this.dataGridView1.AutoGenerateColumns = false;
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridView1.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
@@ -147,9 +147,15 @@ namespace ERespondent
             this.dataGridView1.DataSource = this._dsOKPO;
             this.dataGridView1.Location = new System.Drawing.Point(3, 53);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.Size = new System.Drawing.Size(810, 319);
             this.dataGridView1.TabIndex = 1;
+            // 
+            // _dsOKPO
+            // 
+            this._dsOKPO.DataSetName = "_dsOKPO";
+            this._dsOKPO.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // btnCancel
             // 
@@ -175,8 +181,8 @@ namespace ERespondent
             // sqlInsertCommand1
             // 
             this.sqlInsertCommand1.CommandText = "INSERT INTO [OKPO] ([CodeOKPO], [NameOrganization]) VALUES (@CodeOKPO, @NameOrgan" +
-    "ization);\r\nSELECT CodeOKPO, NameOrganization, CodeRecord FROM OKPO WHERE (CodeRe" +
-    "cord = SCOPE_IDENTITY())";
+                "ization);\r\nSELECT CodeOKPO, NameOrganization, CodeRecord FROM OKPO WHERE (CodeRe" +
+                "cord = SCOPE_IDENTITY())";
             this.sqlInsertCommand1.Connection = this._connectionOKPO;
             this.sqlInsertCommand1.Parameters.AddRange(new System.Data.SqlClient.SqlParameter[] {
             new System.Data.SqlClient.SqlParameter("@CodeOKPO", System.Data.SqlDbType.Float, 0, "CodeOKPO"),
@@ -197,7 +203,7 @@ namespace ERespondent
             // sqlDeleteCommand1
             // 
             this.sqlDeleteCommand1.CommandText = "DELETE FROM [OKPO] WHERE (((@IsNull_CodeOKPO = 1 AND [CodeOKPO] IS NULL) OR ([Cod" +
-    "eOKPO] = @Original_CodeOKPO)) AND ([CodeRecord] = @Original_CodeRecord))";
+                "eOKPO] = @Original_CodeOKPO)) AND ([CodeRecord] = @Original_CodeRecord))";
             this.sqlDeleteCommand1.Connection = this._connectionOKPO;
             this.sqlDeleteCommand1.Parameters.AddRange(new System.Data.SqlClient.SqlParameter[] {
             new System.Data.SqlClient.SqlParameter("@IsNull_CodeOKPO", System.Data.SqlDbType.Int, 0, System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "CodeOKPO", System.Data.DataRowVersion.Original, true, null, "", "", ""),
@@ -216,14 +222,10 @@ namespace ERespondent
                         new System.Data.Common.DataColumnMapping("CodeRecord", "CodeRecord")})});
             this._daOKPO.UpdateCommand = this.sqlUpdateCommand1;
             // 
-            // _dsOKPO
-            // 
-            this._dsOKPO.DataSetName = "_dsOKPO";
-            this._dsOKPO.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // codeOKPODataGridViewTextBoxColumn
             // 
             this.codeOKPODataGridViewTextBoxColumn.DataPropertyName = "CodeOKPO";
+            this.codeOKPODataGridViewTextBoxColumn.FillWeight = 30F;
             this.codeOKPODataGridViewTextBoxColumn.HeaderText = "Код ОКПО";
             this.codeOKPODataGridViewTextBoxColumn.Name = "codeOKPODataGridViewTextBoxColumn";
             // 
@@ -249,6 +251,7 @@ namespace ERespondent
             this.ClientSize = new System.Drawing.Size(818, 406);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MinimumSize = new System.Drawing.Size(330, 210);
             this.Name = "OKPO";
             this.Text = "Справочник кодов ОКПО организаций (подразделений)";
@@ -277,9 +280,9 @@ namespace ERespondent
         private System.Data.SqlClient.SqlCommand sqlUpdateCommand1;
         private System.Data.SqlClient.SqlCommand sqlDeleteCommand1;
         protected internal System.Data.SqlClient.SqlDataAdapter _daOKPO;
+        protected internal _dsOKPO _dsOKPO;
         private System.Windows.Forms.DataGridViewTextBoxColumn codeOKPODataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nameOrganizationDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn codeRecordDataGridViewTextBoxColumn;
-        protected internal _dsOKPO _dsOKPO;
     }
 }

@@ -8,7 +8,7 @@
   </SettingsComponent>
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
-      <Item value="int" priority="0" />
+      <Item value="int" priority="4" />
       <Item value="if" priority="1" />
       <Item value="txtOkpo" priority="5" />
       <Item value="return" priority="0" />
@@ -17,42 +17,53 @@
       <Item value="Warning" priority="0" />
       <Item value="Color`0" priority="1" />
       <Item value="else" priority="0" />
-      <Item value="i" priority="2" />
+      <Item value="i" priority="17" />
       <Item value="Section1_dataGridViewHeader1_1" priority="0" />
       <Item value="e" priority="0" />
       <Item value="workBook" priority="4" />
       <Item value="null" priority="1" />
       <Item value="Application`0" priority="1" />
       <Item value="ApplicationContext`0" priority="0" />
-      <Item value="IXLWorksheets`0" priority="0" />
-      <Item value="new" priority="0" />
+      <Item value="IXLWorksheets`0" priority="1" />
+      <Item value="new" priority="1" />
       <Item value="XLWorkbook" priority="0" />
       <Item value="ExcelExport`0" priority="1" />
-      <Item value="Section2_dataGridView1" priority="0" />
-      <Item value="Section2_dataGridView2" priority="0" />
-      <Item value="Section2_dataGridView3" priority="0" />
-      <Item value="workSheet" priority="0" />
+      <Item value="Section2_dataGridView1" priority="1" />
+      <Item value="Section2_dataGridView2" priority="1" />
+      <Item value="Section2_dataGridView3" priority="1" />
+      <Item value="workSheet" priority="15" />
       <Item value="rngTable" priority="2" />
       <Item value="FillBookSection1`0" priority="0" />
       <Item value="FillBookSection2`0" priority="0" />
-      <Item value="_workSheet" priority="3" />
-      <Item value="grid1" priority="0" />
-      <Item value="grid2" priority="0" />
-      <Item value="grid3" priority="0" />
+      <Item value="_workSheet" priority="4" />
+      <Item value="grid1" priority="1" />
+      <Item value="grid2" priority="2" />
+      <Item value="grid3" priority="6" />
       <Item value="char" priority="0" />
       <Item value="S" priority="0" />
       <Item value="FillValueSection2`0" priority="2" />
       <Item value="public" priority="1" />
-      <Item value="static" priority="0" />
-      <Item value="void" priority="0" />
-      <Item value="DataGridView`0" priority="2" />
+      <Item value="static" priority="1" />
+      <Item value="void" priority="1" />
+      <Item value="DataGridView`0" priority="5" />
       <Item value="SaveBook`0" priority="0" />
-      <Item value="Section3_T3" priority="0" />
+      <Item value="Section3_T3" priority="1" />
       <Item value="Section3_T4" priority="0" />
       <Item value="Section3_T5" priority="0" />
       <Item value="rngTable2" priority="0" />
       <Item value="Thin" priority="0" />
       <Item value="FillValueSection1`0" priority="2" />
+      <Item value="worksheets" priority="0" />
+      <Item value="var" priority="0" />
+      <Item value="E_RespondentDataContext`0" priority="0" />
+      <Item value="for" priority="2" />
+      <Item value="grid" priority="12" />
+      <Item value="FillValueSection3`0" priority="0" />
+      <Item value="Convert`0" priority="1" />
+      <Item value="indexRow" priority="0" />
+      <Item value="Section2_dataGridViewHeader2_1" priority="3" />
+      <Item value="Section2_dataGridViewHeader2_2" priority="1" />
+      <Item value="string" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Windows.Forms.TextBox">
       <Item value="Text" priority="1" />
@@ -74,12 +85,14 @@
       <Item value="Column" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Windows.Forms.DataGridView">
-      <Item value="ColumnCount" priority="1" />
-      <Item value="Columns" priority="0" />
+      <Item value="ColumnCount" priority="2" />
+      <Item value="Columns" priority="8" />
       <Item value="AutoResizeColumns`0" priority="0" />
+      <Item value="RowCount" priority="1" />
+      <Item value="EndEdit`0" priority="2" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Windows.Forms.DataGridViewColumn">
-      <Item value="Width" priority="0" />
+      <Item value="Width" priority="8" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@Microsoft.Office.Interop.Excel.XlFileFormat">
       <Item value="xlHtml" priority="0" />
@@ -105,7 +118,7 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:ClosedXML.Excel.IXLWorksheet">
       <Item value="Row`0" priority="0" />
-      <Item value="Cells`0" priority="0" />
+      <Item value="Cells`0" priority="14" />
       <Item value="Columns`0" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:ClosedXML.Excel.IXLRow">
@@ -134,9 +147,23 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:ClosedXML.Excel.IXLCells">
       <Item value="Style" priority="0" />
+      <Item value="Value" priority="13" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:ClosedXML.Excel.IXLStyle">
       <Item value="Border" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.DataGridViewCell">
+      <Item value="Value" priority="16" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.Convert">
+      <Item value="ToDouble`0" priority="0" />
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Int32">
+      <Item value="ToString`0" priority="0" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:@System.String">
+      <Item value="Format`0" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
   <RecentFiles>
@@ -144,46 +171,48 @@
       <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:App.config" caret="136" fromTop="5" />
       <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:CheckData/f:CheckProtocol.cs" caret="48" fromTop="1" />
       <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:CheckData/f:CheckProtocol.Designer.cs" caret="0" fromTop="0" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:Main.Designer.cs" caret="155186" fromTop="42" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:Main.Designer.cs" caret="143191" fromTop="42" />
       <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Config/f:Configuration.cs" caret="2695" fromTop="36" />
       <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:UtilityFunction/f:AutoTotalSumm.cs" caret="239" fromTop="9" />
       <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:AddEditOKPO.Designer.cs" caret="0" fromTop="0" />
       <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:CheckData/f:ControlFunction.cs" caret="4990" fromTop="67" />
       <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:AddEditOKPO.cs" caret="2115" fromTop="59" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:Main.cs" caret="41737" fromTop="27" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="32854" fromTop="34" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:Program.cs" caret="442" fromTop="17" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ConnectionDB.cs" caret="1484" fromTop="28" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:Main.cs" caret="1967" fromTop="23" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="33577" fromTop="16" />
     </RecentFiles>
     <RecentEdits>
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="221" fromTop="5" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="647" fromTop="17" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="25148" fromTop="22" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="28980" fromTop="31" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="28980" fromTop="29" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="28951" fromTop="24" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="28980" fromTop="25" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="29981" fromTop="42" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="29982" fromTop="42" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="29208" fromTop="17" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="29648" fromTop="42" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="30243" fromTop="18" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="28365" fromTop="19" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="27387" fromTop="25" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="28187" fromTop="38" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="30931" fromTop="16" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="32055" fromTop="34" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="30976" fromTop="17" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="31037" fromTop="18" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="31639" fromTop="17" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="31305" fromTop="21" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="31639" fromTop="32" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="11067" fromTop="17" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="9295" fromTop="24" />
       <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="9976" fromTop="24" />
       <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="10713" fromTop="24" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="32330" fromTop="23" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="32536" fromTop="27" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="31722" fromTop="13" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="32854" fromTop="34" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="32691" fromTop="23" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="32691" fromTop="27" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="32691" fromTop="13" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="24875" fromTop="29" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="23853" fromTop="9" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="30425" fromTop="23" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="32518" fromTop="41" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="34075" fromTop="35" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="32967" fromTop="15" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="32792" fromTop="12" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="36293" fromTop="39" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="36494" fromTop="44" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="35440" fromTop="27" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="34997" fromTop="30" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="34770" fromTop="27" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:Main.cs" caret="41616" fromTop="22" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="34225" fromTop="2" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="36517" fromTop="2" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:Main.cs" caret="41936" fromTop="26" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:Main.cs" caret="34546" fromTop="50" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:Main.cs" caret="11036" fromTop="19" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:Main.cs" caret="10715" fromTop="13" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:Main.cs" caret="33786" fromTop="20" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:Main.cs" caret="2833" fromTop="30" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:Main.cs" caret="34215" fromTop="28" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:Main.cs" caret="41950" fromTop="33" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:Main.cs" caret="2328" fromTop="33" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Excel/f:ExcelExport.cs" caret="33576" fromTop="16" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>
