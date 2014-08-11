@@ -20,10 +20,12 @@ namespace ERespondent
         private OkpoForm _okpoForm;
         private DirectionEnergySave _formDirEnSave;
         private TypeFuel _formTypeFuel;
+        private Color _defaultCellColor;
 
         private void ReportPanel_Load(object sender, EventArgs e)
         {
             ScreenResolution();
+            _defaultCellColor = dataGridView_ReportManager.DefaultCellStyle.SelectionBackColor;
         }
 
         /// <summary>
@@ -107,6 +109,20 @@ namespace ERespondent
 
         #endregion
 
+        private int _lastIndexRow = -1;
+        private int _lastIndexColumn = -1;
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (_lastIndexRow >=0)
+            {
+                ((DataGridView) sender).Rows[_lastIndexRow].Cells[_lastIndexColumn].Style.SelectionBackColor = _defaultCellColor;
+            }
 
+            ((DataGridView)sender).Rows[e.RowIndex].Cells[e.ColumnIndex].Style.SelectionBackColor =  Color.LightBlue;
+            _lastIndexRow = ((DataGridView)sender).CurrentCell.RowIndex;
+            _lastIndexColumn = ((DataGridView)sender).CurrentCell.ColumnIndex;
+        }
+
+        
     }
 }

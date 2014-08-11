@@ -1,4 +1,4 @@
-﻿using ERespondent.DataSet;
+﻿using ERespondent.MyDataSet;
 namespace ERespondent
 {
     partial class OkpoForm
@@ -36,7 +36,7 @@ namespace ERespondent
             this.btrDel = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this._dsOKPO = new ERespondent.DataSet._dsOKPO();
+            this._dsOKPO = new ERespondent.MyDataSet._dsOKPO();
             this.btnCancel = new System.Windows.Forms.Button();
             this.sqlSelectCommand1 = new System.Data.SqlClient.SqlCommand();
             this._connectionOKPO = new System.Data.SqlClient.SqlConnection();

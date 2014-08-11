@@ -1,4 +1,4 @@
-﻿using ERespondent.DataSet;
+﻿using ERespondent.MyDataSet;
 namespace ERespondent
 {
     partial class TypeFuel
@@ -31,7 +31,7 @@ namespace ERespondent
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.dsTypeFuel = new ERespondent.DataSet.dsTypeFuel();
+            this.dsTypeFuel = new ERespondent.MyDataSet.dsTypeFuel();
             this.sqlSelectCommand1 = new System.Data.SqlClient.SqlCommand();
             this.sqlConnection1 = new System.Data.SqlClient.SqlConnection();
             this.sqlInsertCommand1 = new System.Data.SqlClient.SqlCommand();

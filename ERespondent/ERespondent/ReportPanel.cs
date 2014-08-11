@@ -12,12 +12,16 @@ namespace ERespondent
 {
     public partial class ReportPanel : Form
     {
-        public ReportPanel()
-        {
-            InitializeComponent();         
-        }
-
         private E_RespondentDataContext _db;
+        private string _year;
+        private string _kodOkpo; 
+
+        public ReportPanel(string year, string kodOkpo)
+        {
+            InitializeComponent();
+            _year = year;
+            _kodOkpo = kodOkpo;
+        }        
 
         private void MainFormLoad(object sender, EventArgs e)
         {
@@ -248,7 +252,7 @@ namespace ERespondent
             Section1_dataGridView1.Columns[indexCol].Width = newWidth;
             Section1_dataGridView2.Columns[indexCol].Width = newWidth;
             Section1_dataGridView3.Columns[indexCol].Width = newWidth;
-             */
+            */
         }
         #endregion
 
@@ -367,7 +371,7 @@ namespace ERespondent
         #endregion
 
         #region Главное меню
-       
+
         private void соединитьСБазойДанныхToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ConnectionDB connection = new ConnectionDB();
@@ -439,6 +443,17 @@ namespace ERespondent
 
             controlObj.ShowListError();
 
+        }
+
+        private void экспортВExcelToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //завершает режим редактирования ячейки
+            Section3_T3.EditingPanel.Hide();
+            Section3_T4.EditingPanel.Hide();
+            Section3_T5.EditingPanel.Hide();
+            ExcelExport.InitSection1(Section1_dataGridView1, Section1_dataGridView2, Section1_dataGridView3);
+            ExcelExport.InitSection2(Section2_dataGridView1, Section2_dataGridView2, Section2_dataGridView3);
+            ExcelExport.InitSection3(Section3_T3, Section3_T4, Section3_T5);
         }
         #endregion
 
@@ -954,17 +969,6 @@ namespace ERespondent
             this.Width = widthScreen;
         }
 
-        private void экспортВExcelToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            //завершает режим редактирования ячейки
-            Section3_T3.EditingPanel.Hide();
-            Section3_T4.EditingPanel.Hide();
-            Section3_T5.EditingPanel.Hide();
-            ExcelExport.InitSection1(Section1_dataGridView1, Section1_dataGridView2, Section1_dataGridView3);
-            ExcelExport.InitSection2(Section2_dataGridView1, Section2_dataGridView2, Section2_dataGridView3);
-            ExcelExport.InitSection3(Section3_T3, Section3_T4, Section3_T5);
-        }
-
         /// <summary>
         /// Горячие клавиши на удаление записи в таблице (cltr+del)
         /// </summary>
@@ -972,9 +976,62 @@ namespace ERespondent
         /// <param name="e"></param>
         private void Section1_dataGridView1_KeyDown(object sender, KeyEventArgs e)
         {
+            if (e.Modifiers == Keys.Control)
+            {
+                if (e.KeyCode == Keys.Delete)
+                {
+                    try
+                    {
+                        int indexRow;
+                        if (_gridSection1 != null && _gridSection1.RowCount > 1)
+                        {
+                            indexRow = _gridSection1.CurrentRow.Index;
+                            _gridSection1.Rows.RemoveAt(indexRow);
+                        }
+                        if (_gridSection2 != null && _gridSection2.RowCount > 1)
+                        {
+                            indexRow = _gridSection2.CurrentRow.Index;
+                            _gridSection2.Rows.RemoveAt(indexRow);
+                        }
+                    }
+                    catch (InvalidOperationException ex)
+                    {
+                        MessageBox.Show(@"Удаление непереданной строки невозможно!", @"Внимание!", MessageBoxButtons.OK,
+                                        MessageBoxIcon.Warning);
+                    }
+                }
+            }
+        }
 
-        }      
-        
+        /// <summary>
+        /// При "разворачивании/сворачивании в окно" меняются заголовки слолбцов в каждой таблице
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void ReportPanel_SizeChanged(object sender, EventArgs e)
+        {
+            if (this.WindowState==FormWindowState.Maximized || this.WindowState==FormWindowState.Maximized)
+            {
+                for (int i = 0; i < Section1_dataGridViewHeader1_1.ColumnCount; i++)
+                {
+                    Section1_dataGridView1.Columns[i].Width = Section1_dataGridViewHeader1_1.Columns[i].Width;
+                    Section1_dataGridView2.Columns[i].Width = Section1_dataGridViewHeader1_1.Columns[i].Width;
+                    Section1_dataGridView3.Columns[i].Width = Section1_dataGridViewHeader1_1.Columns[i].Width;
+                }
+
+                for (int i = 0; i < Section2_dataGridViewHeader2_1.ColumnCount; i++)
+                {
+                    Section2_dataGridView1.Columns[i].Width = Section2_dataGridViewHeader2_1.Columns[i].Width;
+                    Section2_dataGridView2.Columns[i].Width = Section2_dataGridViewHeader2_1.Columns[i].Width;
+                    Section2_dataGridView3.Columns[i].Width = Section2_dataGridViewHeader2_1.Columns[i].Width;
+                }
+            }
+        }
+
+        private void сохранитьКакToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SaveHelper objHelper = new SaveHelper(_year, _kodOkpo);
+        }
     }
 }
 

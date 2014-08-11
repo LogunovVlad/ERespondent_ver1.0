@@ -9,19 +9,19 @@
   <CompletionStatisticsManager>
     <ItemStatistics item="Default">
       <Item value="int" priority="8" />
-      <Item value="if" priority="6" />
+      <Item value="if" priority="11" />
       <Item value="txtOkpo" priority="5" />
       <Item value="return" priority="0" />
-      <Item value="MessageBox`0" priority="1" />
-      <Item value="OK" priority="1" />
-      <Item value="Warning" priority="1" />
+      <Item value="MessageBox`0" priority="2" />
+      <Item value="OK" priority="2" />
+      <Item value="Warning" priority="2" />
       <Item value="Color`0" priority="5" />
       <Item value="else" priority="2" />
       <Item value="i" priority="19" />
       <Item value="Section1_dataGridViewHeader1_1" priority="0" />
-      <Item value="e" priority="5" />
+      <Item value="e" priority="7" />
       <Item value="workBook" priority="4" />
-      <Item value="null" priority="1" />
+      <Item value="null" priority="3" />
       <Item value="Application`0" priority="1" />
       <Item value="ApplicationContext`0" priority="0" />
       <Item value="IXLWorksheets`0" priority="1" />
@@ -60,8 +60,8 @@
       <Item value="grid" priority="12" />
       <Item value="FillValueSection3`0" priority="0" />
       <Item value="Convert`0" priority="1" />
-      <Item value="indexRow" priority="2" />
-      <Item value="Section2_dataGridViewHeader2_1" priority="3" />
+      <Item value="indexRow" priority="5" />
+      <Item value="Section2_dataGridViewHeader2_1" priority="4" />
       <Item value="Section2_dataGridViewHeader2_2" priority="1" />
       <Item value="string" priority="0" />
       <Item value="Math`0" priority="3" />
@@ -81,7 +81,7 @@
       <Item value="this" priority="3" />
       <Item value="Section1_dataGridView1" priority="2" />
       <Item value="ComboBox`0" priority="3" />
-      <Item value="_gridSection1" priority="1" />
+      <Item value="_gridSection1" priority="6" />
       <Item value="boxColumn" priority="0" />
       <Item value="n" priority="4" />
       <Item value="comboBox" priority="3" />
@@ -112,8 +112,14 @@
       <Item value="_formReport" priority="0" />
       <Item value="ControlKey" priority="0" />
       <Item value="Keys`0" priority="0" />
-      <Item value="_gridSection2" priority="0" />
+      <Item value="_gridSection2" priority="4" />
       <Item value="index" priority="0" />
+      <Item value="Control`0" priority="0" />
+      <Item value="KeyCode" priority="0" />
+      <Item value="catch" priority="0" />
+      <Item value="InvalidOperationException`0" priority="0" />
+      <Item value="соединитьСБазойДанныхToolStripMenuItem" priority="1" />
+      <Item value="TabSection1" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Windows.Forms.TextBox">
       <Item value="Text" priority="2" />
@@ -124,7 +130,7 @@
       <Item value="Length" priority="4" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Windows.Forms.MessageBox">
-      <Item value="Show`0" priority="1" />
+      <Item value="Show`0" priority="2" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Drawing.Color">
       <Item value="Red" priority="3" />
@@ -138,16 +144,16 @@
       <Item value="ColumnCount" priority="2" />
       <Item value="Columns" priority="10" />
       <Item value="AutoResizeColumns`0" priority="0" />
-      <Item value="RowCount" priority="1" />
+      <Item value="RowCount" priority="3" />
       <Item value="EndEdit`0" priority="4" />
       <Item value="CommitEdit`0" priority="1" />
       <Item value="UpdateCellValue`0" priority="0" />
       <Item value="Update`0" priority="0" />
       <Item value="CurrentCell" priority="3" />
       <Item value="EditingPanel" priority="0" />
-      <Item value="Rows" priority="2" />
+      <Item value="Rows" priority="4" />
       <Item value="BeginEdit`0" priority="0" />
-      <Item value="CurrentRow" priority="1" />
+      <Item value="CurrentRow" priority="3" />
       <Item value="SelectedCells" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Windows.Forms.DataGridViewColumn">
@@ -253,7 +259,7 @@
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Windows.Forms.DataGridViewRowCollection">
       <Item value="Add`0" priority="0" />
-      <Item value="RemoveAt`0" priority="0" />
+      <Item value="RemoveAt`0" priority="2" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Windows.Forms.DataGridViewComboBoxColumn">
       <Item value="Index" priority="0" />
@@ -275,7 +281,7 @@
     <ItemStatistics item="Qualified:System.Windows.Forms.DataGridViewRow">
       <Item value="Cells" priority="0" />
       <Item value="IsNewRow" priority="0" />
-      <Item value="Index" priority="1" />
+      <Item value="Index" priority="3" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Windows.Forms.DataGridViewEditingControlShowingEventArgs">
       <Item value="Control" priority="0" />
@@ -304,13 +310,19 @@
       <Item value="KeyPreview" priority="0" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:System.Windows.Forms.KeyEventArgs">
-      <Item value="KeyCode" priority="0" />
+      <Item value="KeyCode" priority="1" />
       <Item value="Control" priority="1" />
+      <Item value="Modifiers" priority="1" />
     </ItemStatistics>
     <ItemStatistics item="Qualified:@System.Windows.Forms.Keys">
       <Item value="Alt" priority="0" />
       <Item value="Control" priority="0" />
-      <Item value="Delete" priority="0" />
+      <Item value="Delete" priority="1" />
+    </ItemStatistics>
+    <ItemStatistics item="Qualified:System.Windows.Forms.TabPage">
+      <Item value="Focus`0" priority="0" />
+      <Item value="Focused" priority="0" />
+      <Item value="CanFocus" priority="0" />
     </ItemStatistics>
   </CompletionStatisticsManager>
   <RecentFiles>
@@ -319,23 +331,9 @@
       <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:Program.cs" caret="472" fromTop="17" />
       <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:CreateNewReport.cs" caret="1268" fromTop="33" />
       <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:MainForm.cs" caret="4304" fromTop="18" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="41650" fromTop="32" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="42102" fromTop="8" />
     </RecentFiles>
     <RecentEdits>
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="41744" fromTop="12" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:CreateNewReport.cs" caret="491" fromTop="20" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="24542" fromTop="12" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="40299" fromTop="19" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="40515" fromTop="894" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="41744" fromTop="15" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:MainForm.cs" caret="624" fromTop="20" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:Program.cs" caret="472" fromTop="17" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:MainForm.cs" caret="1130" fromTop="35" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:MainForm.cs" caret="1130" fromTop="47" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="41744" fromTop="7" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="16089" fromTop="9" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="423" fromTop="12" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:MainForm.cs" caret="512" fromTop="20" />
       <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:MainForm.cs" caret="1120" fromTop="18" />
       <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:MainForm.cs" caret="1380" fromTop="26" />
       <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:MainForm.cs" caret="4310" fromTop="22" />
@@ -348,10 +346,24 @@
       <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:CreateNewReport.cs" caret="1268" fromTop="33" />
       <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:CreateNewReport.cs" caret="1317" fromTop="33" />
       <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:MainForm.cs" caret="4316" fromTop="18" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="41309" fromTop="26" />
       <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="391" fromTop="16" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="41744" fromTop="29" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="41528" fromTop="29" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="42291" fromTop="35" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="41678" fromTop="10" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="42470" fromTop="25" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="41227" fromTop="12" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="20307" fromTop="42" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="19717" fromTop="30" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="43861" fromTop="20" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="10955" fromTop="38" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="10529" fromTop="31" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="10107" fromTop="26" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="42628" fromTop="15" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="42628" fromTop="20" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="43861" fromTop="29" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="43280" fromTop="25" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="43809" fromTop="42" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="43757" fromTop="40" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="42790" fromTop="25" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>

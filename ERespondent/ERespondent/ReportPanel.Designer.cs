@@ -264,6 +264,7 @@ namespace ERespondent
             this.контрольныеФункцииToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.экспортВExcelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.соединитьСБазойДанныхToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.tableLayoutPanelSide = new System.Windows.Forms.TableLayoutPanel();
             this.statusStrip1.SuspendLayout();
             this.Section3_TabControl.SuspendLayout();
             this.TabSection1.SuspendLayout();
@@ -306,13 +307,14 @@ namespace ERespondent
             this.Section3_PanelT4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Section3_T4)).BeginInit();
             this.MainMenuStrip.SuspendLayout();
+            this.tableLayoutPanelSide.SuspendLayout();
             this.SuspendLayout();
             // 
             // statusStrip1
             // 
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.connetcionStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 789);
+            this.statusStrip1.Location = new System.Drawing.Point(0, 835);
             this.statusStrip1.Name = "statusStrip1";
             this.statusStrip1.Size = new System.Drawing.Size(1284, 22);
             this.statusStrip1.TabIndex = 1;
@@ -414,12 +416,13 @@ namespace ERespondent
             this.Section3_TabControl.Controls.Add(this.TabSection1);
             this.Section3_TabControl.Controls.Add(this.TabSection2);
             this.Section3_TabControl.Controls.Add(this.TabSection3);
-            this.Section3_TabControl.Location = new System.Drawing.Point(0, 27);
+            this.Section3_TabControl.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.Section3_TabControl.Location = new System.Drawing.Point(3, 27);
             this.Section3_TabControl.Multiline = true;
             this.Section3_TabControl.Name = "Section3_TabControl";
             this.Section3_TabControl.SelectedIndex = 0;
             this.Section3_TabControl.ShowToolTips = true;
-            this.Section3_TabControl.Size = new System.Drawing.Size(1284, 762);
+            this.Section3_TabControl.Size = new System.Drawing.Size(1278, 805);
             this.Section3_TabControl.TabIndex = 3;
             // 
             // TabSection1
@@ -430,7 +433,7 @@ namespace ERespondent
             this.TabSection1.Location = new System.Drawing.Point(4, 22);
             this.TabSection1.Name = "TabSection1";
             this.TabSection1.Padding = new System.Windows.Forms.Padding(3);
-            this.TabSection1.Size = new System.Drawing.Size(1276, 736);
+            this.TabSection1.Size = new System.Drawing.Size(1270, 779);
             this.TabSection1.TabIndex = 0;
             this.TabSection1.Text = "РАЗДЕЛ I";
             this.TabSection1.ToolTipText = "ВЫПОЛНЕНИЕ МЕРОПРИЯТИЙ ПО ЭКОНОМИИ ТОПЛИВНО-ЭНЕРГЕТИЧЕСКИХ РЕСУРСОВ (ТЭР)";
@@ -443,7 +446,7 @@ namespace ERespondent
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1270, 730);
+            this.panel1.Size = new System.Drawing.Size(1264, 773);
             this.panel1.TabIndex = 5;
             // 
             // tableLayoutPanel1
@@ -454,13 +457,13 @@ namespace ERespondent
             this.tableLayoutPanel1.Controls.Add(this.panel6, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.panel5, 0, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 105);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 104);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 3;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.28101F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.28101F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1270, 625);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1264, 669);
             this.tableLayoutPanel1.TabIndex = 5;
             // 
             // panel4
@@ -470,7 +473,7 @@ namespace ERespondent
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(3, 3);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(1264, 202);
+            this.panel4.Size = new System.Drawing.Size(1258, 216);
             this.panel4.TabIndex = 4;
             // 
             // Section1_dataGridView1
@@ -498,9 +501,10 @@ namespace ERespondent
             this.Section1_dataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditOnEnter;
             this.Section1_dataGridView1.Location = new System.Drawing.Point(0, 19);
             this.Section1_dataGridView1.Name = "Section1_dataGridView1";
+            this.Section1_dataGridView1.RowHeadersVisible = false;
             this.Section1_dataGridView1.RowHeadersWidth = 15;
             this.Section1_dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.Section1_dataGridView1.Size = new System.Drawing.Size(1264, 183);
+            this.Section1_dataGridView1.Size = new System.Drawing.Size(1258, 197);
             this.Section1_dataGridView1.TabIndex = 10;
             this.Section1_dataGridView1.Tag = "T1";
             this.Section1_dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
@@ -603,7 +607,7 @@ namespace ERespondent
             this.Section1Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.Section1Panel1.Location = new System.Drawing.Point(0, 0);
             this.Section1Panel1.Name = "Section1Panel1";
-            this.Section1Panel1.Size = new System.Drawing.Size(1264, 19);
+            this.Section1Panel1.Size = new System.Drawing.Size(1258, 19);
             this.Section1Panel1.TabIndex = 9;
             // 
             // checkBoxTable1
@@ -636,9 +640,9 @@ namespace ERespondent
             this.panel6.Controls.Add(this.panel11);
             this.panel6.Controls.Add(this.Section1Panel3);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(3, 419);
+            this.panel6.Location = new System.Drawing.Point(3, 447);
             this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(1264, 203);
+            this.panel6.Size = new System.Drawing.Size(1258, 219);
             this.panel6.TabIndex = 6;
             // 
             // panel11
@@ -647,7 +651,7 @@ namespace ERespondent
             this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel11.Location = new System.Drawing.Point(0, 19);
             this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(1264, 184);
+            this.panel11.Size = new System.Drawing.Size(1258, 200);
             this.panel11.TabIndex = 12;
             // 
             // Section1_dataGridView3
@@ -678,7 +682,7 @@ namespace ERespondent
             this.Section1_dataGridView3.Location = new System.Drawing.Point(0, 0);
             this.Section1_dataGridView3.Name = "Section1_dataGridView3";
             this.Section1_dataGridView3.RowHeadersVisible = false;
-            this.Section1_dataGridView3.Size = new System.Drawing.Size(1264, 184);
+            this.Section1_dataGridView3.Size = new System.Drawing.Size(1258, 200);
             this.Section1_dataGridView3.TabIndex = 9;
             this.Section1_dataGridView3.Tag = "T3";
             this.Section1_dataGridView3.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
@@ -785,7 +789,7 @@ namespace ERespondent
             this.Section1Panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.Section1Panel3.Location = new System.Drawing.Point(0, 0);
             this.Section1Panel3.Name = "Section1Panel3";
-            this.Section1Panel3.Size = new System.Drawing.Size(1264, 19);
+            this.Section1Panel3.Size = new System.Drawing.Size(1258, 19);
             this.Section1Panel3.TabIndex = 11;
             // 
             // checkBoxTable3
@@ -819,9 +823,9 @@ namespace ERespondent
             this.panel5.Controls.Add(this.panel10);
             this.panel5.Controls.Add(this.Section1Panel2);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(3, 211);
+            this.panel5.Location = new System.Drawing.Point(3, 225);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1264, 202);
+            this.panel5.Size = new System.Drawing.Size(1258, 216);
             this.panel5.TabIndex = 5;
             // 
             // panel10
@@ -830,7 +834,7 @@ namespace ERespondent
             this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel10.Location = new System.Drawing.Point(0, 19);
             this.panel10.Name = "panel10";
-            this.panel10.Size = new System.Drawing.Size(1264, 183);
+            this.panel10.Size = new System.Drawing.Size(1258, 197);
             this.panel10.TabIndex = 11;
             // 
             // Section1_dataGridView2
@@ -861,7 +865,7 @@ namespace ERespondent
             this.Section1_dataGridView2.Location = new System.Drawing.Point(0, 0);
             this.Section1_dataGridView2.Name = "Section1_dataGridView2";
             this.Section1_dataGridView2.RowHeadersVisible = false;
-            this.Section1_dataGridView2.Size = new System.Drawing.Size(1264, 183);
+            this.Section1_dataGridView2.Size = new System.Drawing.Size(1258, 197);
             this.Section1_dataGridView2.TabIndex = 9;
             this.Section1_dataGridView2.Tag = "T2";
             this.Section1_dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
@@ -959,7 +963,7 @@ namespace ERespondent
             this.Section1Panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.Section1Panel2.Location = new System.Drawing.Point(0, 0);
             this.Section1Panel2.Name = "Section1Panel2";
-            this.Section1Panel2.Size = new System.Drawing.Size(1264, 19);
+            this.Section1Panel2.Size = new System.Drawing.Size(1258, 19);
             this.Section1Panel2.TabIndex = 10;
             // 
             // checkBoxTable2
@@ -993,7 +997,7 @@ namespace ERespondent
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1270, 105);
+            this.panel3.Size = new System.Drawing.Size(1264, 104);
             this.panel3.TabIndex = 4;
             // 
             // Section1_dataGridViewHeader1_1
@@ -1041,7 +1045,7 @@ namespace ERespondent
             this.Section1_dataGridViewHeader1_1.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.Section1_dataGridViewHeader1_1.RowHeadersVisible = false;
             this.Section1_dataGridViewHeader1_1.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.Section1_dataGridViewHeader1_1.Size = new System.Drawing.Size(1270, 105);
+            this.Section1_dataGridViewHeader1_1.Size = new System.Drawing.Size(1264, 104);
             this.Section1_dataGridViewHeader1_1.TabIndex = 1;
             // 
             // Column24
@@ -1130,7 +1134,7 @@ namespace ERespondent
             this.TabSection2.Location = new System.Drawing.Point(4, 22);
             this.TabSection2.Name = "TabSection2";
             this.TabSection2.Padding = new System.Windows.Forms.Padding(3);
-            this.TabSection2.Size = new System.Drawing.Size(1276, 736);
+            this.TabSection2.Size = new System.Drawing.Size(1270, 779);
             this.TabSection2.TabIndex = 1;
             this.TabSection2.Text = "РАЗДЕЛ II";
             this.TabSection2.ToolTipText = "ВЫПОЛНЕНИЕ МЕРОПРИЯТИЙ ПО УВЕЛИЧЕНИЮ ИСПОЛЬЗОВАНИЯ МЕСТНЫХ ВИДОВ ТОПЛИВА";
@@ -1143,7 +1147,7 @@ namespace ERespondent
             this.Tab2PanelMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Tab2PanelMain.Location = new System.Drawing.Point(3, 3);
             this.Tab2PanelMain.Name = "Tab2PanelMain";
-            this.Tab2PanelMain.Size = new System.Drawing.Size(1270, 730);
+            this.Tab2PanelMain.Size = new System.Drawing.Size(1264, 773);
             this.Tab2PanelMain.TabIndex = 0;
             // 
             // Section2LayoutPanel2
@@ -1161,7 +1165,7 @@ namespace ERespondent
             this.Section2LayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.Section2LayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
             this.Section2LayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 33.33333F));
-            this.Section2LayoutPanel2.Size = new System.Drawing.Size(1270, 629);
+            this.Section2LayoutPanel2.Size = new System.Drawing.Size(1264, 672);
             this.Section2LayoutPanel2.TabIndex = 1;
             // 
             // Section2PanelGrid1
@@ -1171,7 +1175,7 @@ namespace ERespondent
             this.Section2PanelGrid1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Section2PanelGrid1.Location = new System.Drawing.Point(3, 3);
             this.Section2PanelGrid1.Name = "Section2PanelGrid1";
-            this.Section2PanelGrid1.Size = new System.Drawing.Size(1264, 203);
+            this.Section2PanelGrid1.Size = new System.Drawing.Size(1258, 218);
             this.Section2PanelGrid1.TabIndex = 13;
             // 
             // Section2_dataGridView1
@@ -1203,7 +1207,7 @@ namespace ERespondent
             this.Section2_dataGridView1.Location = new System.Drawing.Point(0, 19);
             this.Section2_dataGridView1.Name = "Section2_dataGridView1";
             this.Section2_dataGridView1.RowHeadersVisible = false;
-            this.Section2_dataGridView1.Size = new System.Drawing.Size(1264, 184);
+            this.Section2_dataGridView1.Size = new System.Drawing.Size(1258, 199);
             this.Section2_dataGridView1.TabIndex = 12;
             this.Section2_dataGridView1.Tag = "T1";
             this.Section2_dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Section2_dataGridView_CellClick);
@@ -1317,7 +1321,7 @@ namespace ERespondent
             this.Section2Panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.Section2Panel1.Location = new System.Drawing.Point(0, 0);
             this.Section2Panel1.Name = "Section2Panel1";
-            this.Section2Panel1.Size = new System.Drawing.Size(1264, 19);
+            this.Section2Panel1.Size = new System.Drawing.Size(1258, 19);
             this.Section2Panel1.TabIndex = 11;
             // 
             // Section2_checkBoxTable1
@@ -1354,9 +1358,9 @@ namespace ERespondent
             this.Section2PanelGrid2.Controls.Add(this.Section2_dataGridView2);
             this.Section2PanelGrid2.Controls.Add(this.Section2Panel2);
             this.Section2PanelGrid2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Section2PanelGrid2.Location = new System.Drawing.Point(3, 212);
+            this.Section2PanelGrid2.Location = new System.Drawing.Point(3, 227);
             this.Section2PanelGrid2.Name = "Section2PanelGrid2";
-            this.Section2PanelGrid2.Size = new System.Drawing.Size(1264, 203);
+            this.Section2PanelGrid2.Size = new System.Drawing.Size(1258, 218);
             this.Section2PanelGrid2.TabIndex = 14;
             // 
             // Section2_dataGridView2
@@ -1388,7 +1392,7 @@ namespace ERespondent
             this.Section2_dataGridView2.Location = new System.Drawing.Point(0, 19);
             this.Section2_dataGridView2.Name = "Section2_dataGridView2";
             this.Section2_dataGridView2.RowHeadersVisible = false;
-            this.Section2_dataGridView2.Size = new System.Drawing.Size(1264, 184);
+            this.Section2_dataGridView2.Size = new System.Drawing.Size(1258, 199);
             this.Section2_dataGridView2.TabIndex = 13;
             this.Section2_dataGridView2.Tag = "T2";
             this.Section2_dataGridView2.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Section2_dataGridView_CellClick);
@@ -1502,7 +1506,7 @@ namespace ERespondent
             this.Section2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.Section2Panel2.Location = new System.Drawing.Point(0, 0);
             this.Section2Panel2.Name = "Section2Panel2";
-            this.Section2Panel2.Size = new System.Drawing.Size(1264, 19);
+            this.Section2Panel2.Size = new System.Drawing.Size(1258, 19);
             this.Section2Panel2.TabIndex = 12;
             // 
             // Section2_checkBoxTable2
@@ -1538,9 +1542,9 @@ namespace ERespondent
             this.Section2PanelGrid3.Controls.Add(this.Section2_dataGridView3);
             this.Section2PanelGrid3.Controls.Add(this.Section3Panel3);
             this.Section2PanelGrid3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Section2PanelGrid3.Location = new System.Drawing.Point(3, 421);
+            this.Section2PanelGrid3.Location = new System.Drawing.Point(3, 451);
             this.Section2PanelGrid3.Name = "Section2PanelGrid3";
-            this.Section2PanelGrid3.Size = new System.Drawing.Size(1264, 205);
+            this.Section2PanelGrid3.Size = new System.Drawing.Size(1258, 218);
             this.Section2PanelGrid3.TabIndex = 15;
             // 
             // Section2_dataGridView3
@@ -1572,7 +1576,7 @@ namespace ERespondent
             this.Section2_dataGridView3.Location = new System.Drawing.Point(0, 19);
             this.Section2_dataGridView3.Name = "Section2_dataGridView3";
             this.Section2_dataGridView3.RowHeadersVisible = false;
-            this.Section2_dataGridView3.Size = new System.Drawing.Size(1264, 186);
+            this.Section2_dataGridView3.Size = new System.Drawing.Size(1258, 199);
             this.Section2_dataGridView3.TabIndex = 14;
             this.Section2_dataGridView3.Tag = "T3";
             this.Section2_dataGridView3.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Section2_dataGridView_CellClick);
@@ -1695,7 +1699,7 @@ namespace ERespondent
             this.Section3Panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.Section3Panel3.Location = new System.Drawing.Point(0, 0);
             this.Section3Panel3.Name = "Section3Panel3";
-            this.Section3Panel3.Size = new System.Drawing.Size(1264, 19);
+            this.Section3Panel3.Size = new System.Drawing.Size(1258, 19);
             this.Section3Panel3.TabIndex = 13;
             // 
             // Section2_checkBoxTable3
@@ -1732,7 +1736,7 @@ namespace ERespondent
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1270, 101);
+            this.panel2.Size = new System.Drawing.Size(1264, 101);
             this.panel2.TabIndex = 0;
             // 
             // Section2_dataGridViewHeader2_1
@@ -1790,7 +1794,7 @@ namespace ERespondent
             this.Section2_dataGridViewHeader2_1.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.Section2_dataGridViewHeader2_1.RowHeadersVisible = false;
             this.Section2_dataGridViewHeader2_1.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.Section2_dataGridViewHeader2_1.Size = new System.Drawing.Size(1270, 101);
+            this.Section2_dataGridViewHeader2_1.Size = new System.Drawing.Size(1264, 101);
             this.Section2_dataGridViewHeader2_1.TabIndex = 1;
             // 
             // ColumnSectionH1_A
@@ -1905,7 +1909,7 @@ namespace ERespondent
             this.TabSection3.Controls.Add(this.panel7);
             this.TabSection3.Location = new System.Drawing.Point(4, 22);
             this.TabSection3.Name = "TabSection3";
-            this.TabSection3.Size = new System.Drawing.Size(1276, 736);
+            this.TabSection3.Size = new System.Drawing.Size(1270, 779);
             this.TabSection3.TabIndex = 2;
             this.TabSection3.Text = "РАЗДЕЛ III";
             this.TabSection3.ToolTipText = "ХОД ВЫПОЛНЕНИЯ ПРОГРАММЫ (ПЛАНА МЕРОПРИЯТИЙ) ПО ЭНЕРГОСБЕРЕЖЕНИЮ";
@@ -1916,7 +1920,7 @@ namespace ERespondent
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(0, 0);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(1276, 736);
+            this.panel7.Size = new System.Drawing.Size(1270, 779);
             this.panel7.TabIndex = 0;
             // 
             // tableLayoutPanel2
@@ -1933,7 +1937,7 @@ namespace ERespondent
             this.tableLayoutPanel2.RowCount = 2;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(1276, 736);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(1270, 779);
             this.tableLayoutPanel2.TabIndex = 8;
             // 
             // Section3_PanelT3
@@ -1943,7 +1947,7 @@ namespace ERespondent
             this.Section3_PanelT3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.Section3_PanelT3.Location = new System.Drawing.Point(3, 3);
             this.Section3_PanelT3.Name = "Section3_PanelT3";
-            this.Section3_PanelT3.Size = new System.Drawing.Size(783, 362);
+            this.Section3_PanelT3.Size = new System.Drawing.Size(780, 383);
             this.Section3_PanelT3.TabIndex = 1;
             // 
             // Section3_T3
@@ -1974,7 +1978,7 @@ namespace ERespondent
             this.Section3_T3.Location = new System.Drawing.Point(0, 16);
             this.Section3_T3.Name = "Section3_T3";
             this.Section3_T3.RowHeadersVisible = false;
-            this.Section3_T3.Size = new System.Drawing.Size(783, 346);
+            this.Section3_T3.Size = new System.Drawing.Size(780, 367);
             this.Section3_T3.TabIndex = 0;
             this.Section3_T3.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.Section3_T3_CellEndEdit);
             // 
@@ -2045,9 +2049,9 @@ namespace ERespondent
             this.Section3_PanelT5.Controls.Add(this.Section3_T5);
             this.Section3_PanelT5.Controls.Add(this.Section3_labelT5);
             this.Section3_PanelT5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Section3_PanelT5.Location = new System.Drawing.Point(3, 371);
+            this.Section3_PanelT5.Location = new System.Drawing.Point(3, 392);
             this.Section3_PanelT5.Name = "Section3_PanelT5";
-            this.Section3_PanelT5.Size = new System.Drawing.Size(1270, 362);
+            this.Section3_PanelT5.Size = new System.Drawing.Size(1264, 384);
             this.Section3_PanelT5.TabIndex = 2;
             // 
             // Section3_T5
@@ -2075,7 +2079,7 @@ namespace ERespondent
             this.Section3_T5.Location = new System.Drawing.Point(0, 19);
             this.Section3_T5.Name = "Section3_T5";
             this.Section3_T5.RowHeadersVisible = false;
-            this.Section3_T5.Size = new System.Drawing.Size(1270, 343);
+            this.Section3_T5.Size = new System.Drawing.Size(1264, 365);
             this.Section3_T5.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn1
@@ -2107,7 +2111,7 @@ namespace ERespondent
             this.Section3_labelT5.ForeColor = System.Drawing.Color.Black;
             this.Section3_labelT5.Location = new System.Drawing.Point(0, 0);
             this.Section3_labelT5.Name = "Section3_labelT5";
-            this.Section3_labelT5.Size = new System.Drawing.Size(1270, 19);
+            this.Section3_labelT5.Size = new System.Drawing.Size(1264, 19);
             this.Section3_labelT5.TabIndex = 7;
             this.Section3_labelT5.Text = "Таблица 5. Причины невыполнения мероприятий программы (плана мероприятий) по энер" +
                 "госбережению \r\n";
@@ -2117,9 +2121,9 @@ namespace ERespondent
             this.Section3_PanelT4.Controls.Add(this.Section3_T4);
             this.Section3_PanelT4.Controls.Add(this.Section3_labelT4);
             this.Section3_PanelT4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Section3_PanelT4.Location = new System.Drawing.Point(792, 3);
+            this.Section3_PanelT4.Location = new System.Drawing.Point(789, 3);
             this.Section3_PanelT4.Name = "Section3_PanelT4";
-            this.Section3_PanelT4.Size = new System.Drawing.Size(481, 362);
+            this.Section3_PanelT4.Size = new System.Drawing.Size(478, 383);
             this.Section3_PanelT4.TabIndex = 3;
             // 
             // Section3_T4
@@ -2147,7 +2151,7 @@ namespace ERespondent
             this.Section3_T4.Location = new System.Drawing.Point(0, 32);
             this.Section3_T4.Name = "Section3_T4";
             this.Section3_T4.RowHeadersVisible = false;
-            this.Section3_T4.Size = new System.Drawing.Size(481, 330);
+            this.Section3_T4.Size = new System.Drawing.Size(478, 351);
             this.Section3_T4.TabIndex = 0;
             // 
             // Column21
@@ -2176,13 +2180,14 @@ namespace ERespondent
             this.Section3_labelT4.ForeColor = System.Drawing.Color.Black;
             this.Section3_labelT4.Location = new System.Drawing.Point(0, 0);
             this.Section3_labelT4.Name = "Section3_labelT4";
-            this.Section3_labelT4.Size = new System.Drawing.Size(481, 32);
+            this.Section3_labelT4.Size = new System.Drawing.Size(478, 32);
             this.Section3_labelT4.TabIndex = 6;
             this.Section3_labelT4.Text = "Таблица 4. Выполнение установленного годового задания по экономии ТЭР.";
             // 
             // MainMenuStrip
             // 
             this.MainMenuStrip.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.MainMenuStrip.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MainMenuStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.файлToolStripMenuItem,
             this.функцииToolStripMenuItem,
@@ -2205,13 +2210,14 @@ namespace ERespondent
             // сохранитьКакToolStripMenuItem
             // 
             this.сохранитьКакToolStripMenuItem.Name = "сохранитьКакToolStripMenuItem";
-            this.сохранитьКакToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
-            this.сохранитьКакToolStripMenuItem.Text = "Сохранить как...";
+            this.сохранитьКакToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.сохранитьКакToolStripMenuItem.Text = "Сохранить";
+            this.сохранитьКакToolStripMenuItem.Click += new System.EventHandler(this.сохранитьКакToolStripMenuItem_Click);
             // 
             // выходToolStripMenuItem
             // 
             this.выходToolStripMenuItem.Name = "выходToolStripMenuItem";
-            this.выходToolStripMenuItem.Size = new System.Drawing.Size(162, 22);
+            this.выходToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.выходToolStripMenuItem.Text = "Закрыть";
             this.выходToolStripMenuItem.Click += new System.EventHandler(this.ВыходToolStripMenuItemClick);
             // 
@@ -2245,14 +2251,28 @@ namespace ERespondent
             this.соединитьСБазойДанныхToolStripMenuItem.Text = "Соединить с базой данных";
             this.соединитьСБазойДанныхToolStripMenuItem.Click += new System.EventHandler(this.соединитьСБазойДанныхToolStripMenuItem_Click);
             // 
+            // tableLayoutPanelSide
+            // 
+            this.tableLayoutPanelSide.ColumnCount = 1;
+            this.tableLayoutPanelSide.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanelSide.Controls.Add(this.MainMenuStrip, 0, 0);
+            this.tableLayoutPanelSide.Controls.Add(this.Section3_TabControl, 0, 1);
+            this.tableLayoutPanelSide.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanelSide.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanelSide.Name = "tableLayoutPanelSide";
+            this.tableLayoutPanelSide.RowCount = 2;
+            this.tableLayoutPanelSide.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 24F));
+            this.tableLayoutPanelSide.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
+            this.tableLayoutPanelSide.Size = new System.Drawing.Size(1284, 835);
+            this.tableLayoutPanelSide.TabIndex = 5;
+            // 
             // ReportPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1284, 811);
-            this.Controls.Add(this.MainMenuStrip);
-            this.Controls.Add(this.Section3_TabControl);
+            this.ClientSize = new System.Drawing.Size(1284, 857);
+            this.Controls.Add(this.tableLayoutPanelSide);
             this.Controls.Add(this.statusStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.KeyPreview = true;
@@ -2260,6 +2280,7 @@ namespace ERespondent
             this.StartPosition = System.Windows.Forms.FormStartPosition.WindowsDefaultBounds;
             this.Text = "Форма 4-Энергосбережение (госстандарт)";
             this.Load += new System.EventHandler(this.MainFormLoad);
+            this.SizeChanged += new System.EventHandler(this.ReportPanel_SizeChanged);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Section1_dataGridView1_KeyDown);
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
@@ -2312,6 +2333,8 @@ namespace ERespondent
             ((System.ComponentModel.ISupportInitialize)(this.Section3_T4)).EndInit();
             this.MainMenuStrip.ResumeLayout(false);
             this.MainMenuStrip.PerformLayout();
+            this.tableLayoutPanelSide.ResumeLayout(false);
+            this.tableLayoutPanelSide.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2538,6 +2561,7 @@ namespace ERespondent
         private System.Windows.Forms.ToolStripMenuItem контрольныеФункцииToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem экспортВExcelToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem соединитьСБазойДанныхToolStripMenuItem;
+        private System.Windows.Forms.TableLayoutPanel tableLayoutPanelSide;
     }
 }
 

@@ -12,6 +12,7 @@ namespace ERespondent
 {
     public partial class CreateNewReport : Form
     {
+        private ReportPanel _formReport;
         public CreateNewReport()
         {
             InitializeComponent();
@@ -19,8 +20,8 @@ namespace ERespondent
 
         private void CreateNewReport_Load(object sender, EventArgs e)
         {
-            var _db = new E_RespondentDataContext();
-            var kod = (from c in _db.OKPOs 
+            var db = new E_RespondentDataContext();
+            var kod = (from c in db.OKPOs 
                        select c);
             comboBoxKod.DataSource = kod;
             comboBoxKod.DisplayMember = "CodeOKPO";
@@ -37,7 +38,7 @@ namespace ERespondent
             else
             {
                 this.Close();
-                ReportPanel _formReport=new ReportPanel();
+                _formReport = new ReportPanel(comboBoxYear.Text, comboBoxKod.Text);
                 _formReport.Show();
             }
         }
