@@ -15,7 +15,7 @@ namespace ERespondent
         public DirectionEnergySave()
         {
             InitializeComponent();
-            MainForm formMain = this.Owner as MainForm;
+            ReportPanel formMain = this.Owner as ReportPanel;
         }
 
         private void DirectionEnergySave_Load(object sender, EventArgs e)

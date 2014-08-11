@@ -10,16 +10,13 @@ using ERespondent.Excel;
 
 namespace ERespondent
 {
-    public partial class MainForm : Form
+    public partial class ReportPanel : Form
     {
-        public MainForm()
+        public ReportPanel()
         {
-            InitializeComponent();
+            InitializeComponent();         
         }
 
-        private DirectionEnergySave _formDirEnSave;
-        private TypeFuel _formTypeFuel;
-        private OKPO _okpoForm;
         private E_RespondentDataContext _db;
 
         private void MainFormLoad(object sender, EventArgs e)
@@ -370,31 +367,7 @@ namespace ERespondent
         #endregion
 
         #region Главное меню
-        private void справочникКодовОКПООрганизацийToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            _okpoForm = new OKPO { Owner = this };
-            //указываем владельца
-            _okpoForm.Show();
-        }
-
-        /// <summary>
-        /// Форма для вывода перечня основных энергосбережений
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void переченьОсновныхНаправленийЭнергосбереженияToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            _formDirEnSave = new DirectionEnergySave();
-            _formDirEnSave.Owner = this;
-            _formDirEnSave.Show();
-        }
-
-        private void видыТопливаИЭнергииToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            _formTypeFuel = new TypeFuel { Owner = this };
-            _formTypeFuel.Show();
-        }
-
+       
         private void соединитьСБазойДанныхToolStripMenuItem_Click(object sender, EventArgs e)
         {
             ConnectionDB connection = new ConnectionDB();
@@ -992,52 +965,15 @@ namespace ERespondent
             ExcelExport.InitSection3(Section3_T3, Section3_T4, Section3_T5);
         }
 
-        private void создатьНовыйToolStripMenuItem_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Горячие клавиши на удаление записи в таблице (cltr+del)
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void Section1_dataGridView1_KeyDown(object sender, KeyEventArgs e)
         {
-            CreateNewReport formRep = new CreateNewReport();
-            formRep.Show();
-        }
 
-        private void открытьToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            int[] n = new int[] {100,200,301,302,303,304};
-            _db = new E_RespondentDataContext();
-            for(int i=1; i<n.Count();i++)
-            {
-                Section1_dataGridView1.Rows.Add();
-                Section1_dataGridView1[0, i].Value = n[i];
-
-                //делаем активной ячейку содержащую ComboBox
-                Section1_dataGridView1.CurrentCell = Section1_dataGridView1.Rows[i].Cells[2];
-                Section1_dataGridView1.Rows[i].Cells[2].Selected = true;
-                //Section1_dataGridView1.BeginEdit(true);
-
-                DestinationSave row = (from c in _db.DestinationSave
-                                       where c.CodeDirection == n[i]
-                                       select c).Single<DestinationSave>();
-                //устанавливаем индекс
-                ((DataGridViewComboBoxEditingControl)Section1_dataGridView1.EditingControl).SelectedValue = row.CodeRecord;
-                Section1_dataGridView1[3, i].Value = "23.03.2014";
-                Section1_dataGridView1[4, i].Value = row.Unit;
-            
-            }
-            Section1_dataGridView1[0, 0].Value = n[0];
-            Section1_dataGridView1.CurrentCell = Section1_dataGridView1.Rows[0].Cells[2];
-            Section1_dataGridView1.Rows[0].Cells[2].Selected = true;
-            ((DataGridViewComboBoxEditingControl)Section1_dataGridView1.EditingControl).SelectedValue = 1;
-            //int index = Convert.ToInt32(((ComboBox)sender).SelectedValue);
-            /*
-            DestinationSave row = (from c in _db.DestinationSave
-                                   where c.CodeRecord == index
-                                   select c).Single<DestinationSave>();
-            _gridSection2.CurrentRow.Cells[0].Value = row.CodeDirection;
-            if (!_gridSection2.Tag.Equals("T3"))
-            {
-                _gridSection2.CurrentRow.Cells[6].Value = row.Unit;
-            }
-            _gridSection2.EndEdit();
-            */
-        }
+        }      
         
     }
 }

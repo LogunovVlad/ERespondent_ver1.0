@@ -70,7 +70,6 @@ d:\git\ERespondent\ERespondent\obj\x86\Debug\ERespondent.AddEditOKPO.resources
 d:\git\ERespondent\ERespondent\obj\x86\Debug\ERespondent.CheckData.CheckProtocol.resources
 d:\git\ERespondent\ERespondent\obj\x86\Debug\ERespondent.DirectionEnergySave.resources
 d:\git\ERespondent\ERespondent\obj\x86\Debug\ERespondent.MainForm.resources
-d:\git\ERespondent\ERespondent\obj\x86\Debug\ERespondent.OKPO.resources
 d:\git\ERespondent\ERespondent\obj\x86\Debug\ERespondent.Properties.Resources.resources
 d:\git\ERespondent\ERespondent\obj\x86\Debug\ERespondent.Table1.resources
 d:\git\ERespondent\ERespondent\obj\x86\Debug\ERespondent.TypeFuel.resources
@@ -83,3 +82,5 @@ d:\git\ERespondent\ERespondent\bin\Debug\GridWpf.dll
 d:\git\ERespondent\ERespondent\bin\Debug\GridWpf.pdb
 d:\git\ERespondent\ERespondent\bin\Debug\ClassLibrary1.pdb
 d:\git\ERespondent\ERespondent\obj\x86\Debug\ERespondent.CreateNewReport.resources
+d:\git\ERespondent\ERespondent\obj\x86\Debug\ERespondent.OkpoForm.resources
+d:\git\ERespondent\ERespondent\obj\x86\Debug\ERespondent.ReportPanel.resources

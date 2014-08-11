@@ -116,23 +116,26 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>dsTypeFuel.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Entity\E_Respondent.cs">
+      <DependentUpon>E_Respondent.dbml</DependentUpon>
+    </Compile>
     <Compile Include="Entity\E_Respondent.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>E_Respondent.dbml</DependentUpon>
     </Compile>
     <Compile Include="Excel\ExcelExport.cs" />
-    <Compile Include="Main.cs">
+    <Compile Include="ReportPanel.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Main.Designer.cs">
-      <DependentUpon>Main.cs</DependentUpon>
+    <Compile Include="ReportPanel.Designer.cs">
+      <DependentUpon>ReportPanel.cs</DependentUpon>
     </Compile>
-    <Compile Include="OKPO.cs">
+    <Compile Include="OkpoForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="OKPO.Designer.cs">
-      <DependentUpon>OKPO.cs</DependentUpon>
+    <Compile Include="OkpoForm.Designer.cs">
+      <DependentUpon>OkpoForm.cs</DependentUpon>
     </Compile>
     <Compile Include="DataSet\okpoDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -141,6 +144,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Settings.cs" />
     <Compile Include="Table1.cs">
       <SubType>UserControl</SubType>
@@ -175,11 +184,11 @@
     <None Include="Entity\E_Respondent.dbml.layout">
       <DependentUpon>E_Respondent.dbml</DependentUpon>
     </None>
-    <EmbeddedResource Include="Main.resx">
-      <DependentUpon>Main.cs</DependentUpon>
+    <EmbeddedResource Include="ReportPanel.resx">
+      <DependentUpon>ReportPanel.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OKPO.resx">
-      <DependentUpon>OKPO.cs</DependentUpon>
+    <EmbeddedResource Include="OkpoForm.resx">
+      <DependentUpon>OkpoForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -190,6 +199,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Table1.resx">
       <DependentUpon>Table1.cs</DependentUpon>
     </EmbeddedResource>

@@ -11,20 +11,20 @@ using System.Configuration;
 
 namespace ERespondent
 {
-    public partial class OKPO : Form
+    public partial class OkpoForm : Form
     {
-        public OKPO()
+        public OkpoForm()
         {
             InitializeComponent();
         }
         private AddEditOKPO _addOKPO;
-        private MainForm _mainForm;
+        private ReportPanel _mainForm;
 
         private void OKPO_Load(object sender, EventArgs e)
         {
             _connectionOKPO.ConnectionString = ConfigurationManager.ConnectionStrings["ERConn"].ConnectionString;
             //определяем владельца
-            _mainForm = this.Owner as MainForm;
+            _mainForm = this.Owner as ReportPanel;
 
             try
             {                                                         

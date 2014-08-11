@@ -15,10 +15,10 @@ namespace ERespondent
         {
             InitializeComponent();
         }
-        OKPO formOKPO;
+        OkpoForm formOKPO;
         private void AddEditOKPO_Load(object sender, EventArgs e)
         {
-            formOKPO = this.Owner as OKPO;
+            formOKPO = this.Owner as OkpoForm;
             //проверка: какую функцию давать форме - добавление или редактирование
             if (formOKPO.Tag.Equals("ADD"))
             {

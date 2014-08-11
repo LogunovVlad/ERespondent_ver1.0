@@ -20,7 +20,7 @@ namespace ERespondent
         private void TypeFuel_Load(object sender, EventArgs e)
         {
             sqlConnection1.ConnectionString = ConfigurationManager.ConnectionStrings["ERConn"].ConnectionString;
-            MainForm mainForm=this.Owner as MainForm;
+            ReportPanel mainForm=this.Owner as ReportPanel;
             daTypeFuel.Fill(dsTypeFuel);           
         }
     }

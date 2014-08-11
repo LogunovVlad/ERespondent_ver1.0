@@ -15,4 +15,11 @@
       <Column Name="TypeFuel" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
     </Type>
   </Table>
+  <Table Name="dbo.OKPO" Member="OKPOs">
+    <Type Name="OKPO">
+      <Column Name="CodeOKPO" Type="System.Int64" DbType="BigInt" CanBeNull="true" />
+      <Column Name="NameOrganization" Type="System.String" DbType="Text" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="CodeRecord" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+    </Type>
+  </Table>
 </Database>
