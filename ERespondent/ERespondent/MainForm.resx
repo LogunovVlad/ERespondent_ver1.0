@@ -123,8 +123,14 @@
   <metadata name="statusStrip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>132, 17</value>
   </metadata>
-  <metadata name="_dsReport.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>509, 17</value>
+  <metadata name="_masterBinding.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>681, 17</value>
+  </metadata>
+  <metadata name="_dsRV1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 56</value>
+  </metadata>
+  <metadata name="detailBinding.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>816, 17</value>
   </metadata>
   <metadata name="_connectionReport.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>248, 17</value>
@@ -142,8 +148,8 @@
     <value>False</value>
   </metadata>
   <data name="sqlInsertCommand1.CommandText" xml:space="preserve">
-    <value>INSERT INTO [Reports] ([KodOrganization], [NameOrganization], [Year], [Edit], [Version]) VALUES (@KodOrganization, @NameOrganization, @Year, @Edit, @Version);
-SELECT Kod, KodOrganization, NameOrganization, Year, Edit, Version FROM Reports WHERE (Kod = SCOPE_IDENTITY())</value>
+    <value>INSERT INTO [Reports] ([KodOrganization], [NameOrganization], [Year], [Edit]) VALUES (@KodOrganization, @NameOrganization, @Year, @Edit);
+SELECT ReportId, KodOrganization, NameOrganization, Year, Edit FROM Reports WHERE (ReportId = SCOPE_IDENTITY())</value>
   </data>
   <metadata name="sqlUpdateCommand1.DesignTimeVisible" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
@@ -152,8 +158,8 @@ SELECT Kod, KodOrganization, NameOrganization, Year, Edit, Version FROM Reports 
     <value>False</value>
   </metadata>
   <data name="sqlUpdateCommand1.CommandText" xml:space="preserve">
-    <value>UPDATE [Reports] SET [KodOrganization] = @KodOrganization, [NameOrganization] = @NameOrganization, [Year] = @Year, [Edit] = @Edit, [Version] = @Version WHERE (([Kod] = @Original_Kod) AND ((@IsNull_KodOrganization = 1 AND [KodOrganization] IS NULL) OR ([KodOrganization] = @Original_KodOrganization)) AND ((@IsNull_Edit = 1 AND [Edit] IS NULL) OR ([Edit] = @Original_Edit)));
-SELECT Kod, KodOrganization, NameOrganization, Year, Edit, Version FROM Reports WHERE (Kod = @Kod)</value>
+    <value>UPDATE [Reports] SET [KodOrganization] = @KodOrganization, [NameOrganization] = @NameOrganization, [Year] = @Year, [Edit] = @Edit WHERE (([ReportId] = @Original_ReportId) AND ((@IsNull_KodOrganization = 1 AND [KodOrganization] IS NULL) OR ([KodOrganization] = @Original_KodOrganization)) AND ((@IsNull_Edit = 1 AND [Edit] IS NULL) OR ([Edit] = @Original_Edit)));
+SELECT ReportId, KodOrganization, NameOrganization, Year, Edit FROM Reports WHERE (ReportId = @ReportId)</value>
   </data>
   <metadata name="sqlDeleteCommand1.DesignTimeVisible" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>False</value>
@@ -162,10 +168,44 @@ SELECT Kod, KodOrganization, NameOrganization, Year, Edit, Version FROM Reports 
     <value>False</value>
   </metadata>
   <data name="sqlDeleteCommand1.CommandText" xml:space="preserve">
-    <value>DELETE FROM [Reports] WHERE (([Kod] = @Original_Kod) AND ((@IsNull_KodOrganization = 1 AND [KodOrganization] IS NULL) OR ([KodOrganization] = @Original_KodOrganization)) AND ((@IsNull_Edit = 1 AND [Edit] IS NULL) OR ([Edit] = @Original_Edit)))</value>
+    <value>DELETE FROM [Reports] WHERE (([ReportId] = @Original_ReportId) AND ((@IsNull_KodOrganization = 1 AND [KodOrganization] IS NULL) OR ([KodOrganization] = @Original_KodOrganization)) AND ((@IsNull_Edit = 1 AND [Edit] IS NULL) OR ([Edit] = @Original_Edit)))</value>
   </data>
-  <metadata name="_daReport.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+  <metadata name="_masterAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>402, 17</value>
+  </metadata>
+  <metadata name="sqlSelectCommand2.DesignTimeVisible" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlSelectCommand2.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlInsertCommand2.DesignTimeVisible" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlInsertCommand2.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlUpdateCommand2.DesignTimeVisible" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlUpdateCommand2.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="sqlUpdateCommand2.CommandText" xml:space="preserve">
+    <value>UPDATE [Version] SET [ReportId] = @ReportId, [DateEdit] = @DateEdit WHERE (([VersionId] = @Original_VersionId) AND ((@IsNull_ReportId = 1 AND [ReportId] IS NULL) OR ([ReportId] = @Original_ReportId)) AND ((@IsNull_DateEdit = 1 AND [DateEdit] IS NULL) OR ([DateEdit] = @Original_DateEdit)));
+SELECT VersionId, ReportId, DateEdit FROM Version WHERE (VersionId = @VersionId)</value>
+  </data>
+  <metadata name="sqlDeleteCommand2.DesignTimeVisible" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="sqlDeleteCommand2.CommandDesignTimeVisible" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <data name="sqlDeleteCommand2.CommandText" xml:space="preserve">
+    <value>DELETE FROM [Version] WHERE (([VersionId] = @Original_VersionId) AND ((@IsNull_ReportId = 1 AND [ReportId] IS NULL) OR ([ReportId] = @Original_ReportId)) AND ((@IsNull_DateEdit = 1 AND [DateEdit] IS NULL) OR ([DateEdit] = @Original_DateEdit)))</value>
+  </data>
+  <metadata name="_detailsAdapter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>545, 17</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

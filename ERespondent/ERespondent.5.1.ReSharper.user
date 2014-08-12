@@ -329,41 +329,51 @@
     <RecentFiles>
       <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Entity/f:E_Respondent.cs" caret="0" fromTop="0" />
       <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:Program.cs" caret="472" fromTop="17" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:CreateNewReport.cs" caret="1268" fromTop="33" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:MainForm.cs" caret="4304" fromTop="18" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="42102" fromTop="8" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:MainForm.Designer.cs" caret="26162" fromTop="24" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:CheckData/f:ControlFunction.cs" caret="0" fromTop="0" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:App.config" caret="0" fromTop="0" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/d:Properties/f:Resources.resx" caret="6924" fromTop="23" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:OkpoForm.Designer.cs" caret="1596" fromTop="0" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:TypeFuel.Designer.cs" caret="1187" fromTop="24" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:DirectionEnergySave.Designer.cs" caret="1200" fromTop="0" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:AddEditOKPO.cs" caret="3420" fromTop="37" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:OkpoForm.cs" caret="3275" fromTop="16" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="44279" fromTop="24" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:CreateNewReport.cs" caret="1261" fromTop="33" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:SaveHelper.cs" caret="710" fromTop="24" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:MainForm.cs" caret="1285" fromTop="5" />
     </RecentFiles>
     <RecentEdits>
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:MainForm.cs" caret="1120" fromTop="18" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:MainForm.cs" caret="1380" fromTop="26" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:MainForm.cs" caret="4310" fromTop="22" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:MainForm.cs" caret="4310" fromTop="47" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:MainForm.cs" caret="4316" fromTop="62" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:MainForm.cs" caret="1969" fromTop="15" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:MainForm.cs" caret="217" fromTop="8" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:CreateNewReport.cs" caret="760" fromTop="17" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:CreateNewReport.cs" caret="917" fromTop="24" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:CreateNewReport.cs" caret="1268" fromTop="33" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:CreateNewReport.cs" caret="1317" fromTop="33" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:MainForm.cs" caret="4316" fromTop="18" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="391" fromTop="16" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="42291" fromTop="35" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="41678" fromTop="10" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="42470" fromTop="25" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="41227" fromTop="12" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="20307" fromTop="42" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="19717" fromTop="30" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="43861" fromTop="20" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="10955" fromTop="38" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="10529" fromTop="31" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="10107" fromTop="26" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="42628" fromTop="15" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="42628" fromTop="20" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="43861" fromTop="29" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="43280" fromTop="25" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="43809" fromTop="42" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="43757" fromTop="40" />
-      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:ReportPanel.cs" caret="42790" fromTop="25" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:TypeFuel.Designer.cs" caret="1187" fromTop="24" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:SaveHelper.cs" caret="980" fromTop="47" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:SaveHelper.cs" caret="957" fromTop="47" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:SaveHelper.cs" caret="823" fromTop="27" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:SaveHelper.cs" caret="941" fromTop="39" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:SaveHelper.cs" caret="840" fromTop="35" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:SaveHelper.cs" caret="823" fromTop="22" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:SaveHelper.cs" caret="477" fromTop="4" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:SaveHelper.cs" caret="710" fromTop="31" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:SaveHelper.cs" caret="710" fromTop="20" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:SaveHelper.cs" caret="710" fromTop="22" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:SaveHelper.cs" caret="710" fromTop="26" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:SaveHelper.cs" caret="710" fromTop="30" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:SaveHelper.cs" caret="710" fromTop="34" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:SaveHelper.cs" caret="710" fromTop="14" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:SaveHelper.cs" caret="825" fromTop="16" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:SaveHelper.cs" caret="710" fromTop="9" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:SaveHelper.cs" caret="710" fromTop="12" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:SaveHelper.cs" caret="710" fromTop="28" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:SaveHelper.cs" caret="710" fromTop="29" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:CreateNewReport.cs" caret="1382" fromTop="33" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:SaveHelper.cs" caret="712" fromTop="25" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:MainForm.cs" caret="738" fromTop="15" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:MainForm.cs" caret="693" fromTop="17" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:MainForm.cs" caret="4944" fromTop="18" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:MainForm.cs" caret="7039" fromTop="0" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:MainForm.cs" caret="7039" fromTop="0" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:MainForm.cs" caret="7011" fromTop="38" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:MainForm.cs" caret="1285" fromTop="5" />
+      <File id="58ABDF44-DE0F-4FCE-B6AC-D971A5265FFB/f:MainForm.cs" caret="7039" fromTop="5" />
     </RecentEdits>
   </RecentFiles>
   <NAntValidationSettings>

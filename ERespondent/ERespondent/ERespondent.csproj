@@ -170,10 +170,10 @@
       <DependentUpon>_dsOKPO.xsd</DependentUpon>
     </Compile>
     <Compile Include="UtilityFunction\AutoTotalSumm.cs" />
-    <Compile Include="_dsReport.Designer.cs">
+    <Compile Include="_dsRV.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>_dsReport.xsd</DependentUpon>
+      <DependentUpon>_dsRV.xsd</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AddEditOKPO.resx">
       <DependentUpon>AddEditOKPO.cs</DependentUpon>
@@ -287,16 +287,16 @@
     <None Include="MyDataSet\_dsOKPO.xss">
       <DependentUpon>_dsOKPO.xsd</DependentUpon>
     </None>
-    <None Include="_dsReport.xsc">
-      <DependentUpon>_dsReport.xsd</DependentUpon>
+    <None Include="_dsRV.xsc">
+      <DependentUpon>_dsRV.xsd</DependentUpon>
     </None>
-    <None Include="_dsReport.xsd">
+    <None Include="_dsRV.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>_dsReport.Designer.cs</LastGenOutput>
+      <LastGenOutput>_dsRV.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="_dsReport.xss">
-      <DependentUpon>_dsReport.xsd</DependentUpon>
+    <None Include="_dsRV.xss">
+      <DependentUpon>_dsRV.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>

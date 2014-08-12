@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -26,6 +28,10 @@ namespace ERespondent
         {
             ScreenResolution();
             _defaultCellColor = dataGridView_ReportManager.DefaultCellStyle.SelectionBackColor;
+            
+            _masterAdapter.Fill(_dsRV1, "Reports");
+            _detailsAdapter.Fill(_dsRV1, "Version");
+            
         }
 
         /// <summary>
@@ -107,22 +113,25 @@ namespace ERespondent
                */
         }
 
-        #endregion
 
         private int _lastIndexRow = -1;
         private int _lastIndexColumn = -1;
         private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (_lastIndexRow >=0)
+            if (_lastIndexRow >= 0)
             {
-                ((DataGridView) sender).Rows[_lastIndexRow].Cells[_lastIndexColumn].Style.SelectionBackColor = _defaultCellColor;
+                ((DataGridView)sender).Rows[_lastIndexRow].Cells[_lastIndexColumn].Style.SelectionBackColor = _defaultCellColor;
             }
 
-            ((DataGridView)sender).Rows[e.RowIndex].Cells[e.ColumnIndex].Style.SelectionBackColor =  Color.LightBlue;
+            ((DataGridView)sender).Rows[e.RowIndex].Cells[e.ColumnIndex].Style.SelectionBackColor = Color.LightBlue;
             _lastIndexRow = ((DataGridView)sender).CurrentCell.RowIndex;
             _lastIndexColumn = ((DataGridView)sender).CurrentCell.ColumnIndex;
         }
+        #endregion
 
-        
+        private void CreateSqlAdapter()
+        {
+            
+        }
     }
 }
