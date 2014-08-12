@@ -89,13 +89,7 @@
     <Compile Include="CheckData\ControlFunction.cs" />
     <Compile Include="Config\Configuration.cs" />
     <Compile Include="ConnectionDB.cs" />
-    <Compile Include="CreateNewReport.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="CreateNewReport.Designer.cs">
-      <DependentUpon>CreateNewReport.cs</DependentUpon>
-    </Compile>
-    <Compile Include="MyDataSet\DataSet1.Designer.cs">
+    <Compile Include="DataSet\DataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataSet1.xsd</DependentUpon>
@@ -106,18 +100,15 @@
     <Compile Include="DirectionEnergySave.Designer.cs">
       <DependentUpon>DirectionEnergySave.cs</DependentUpon>
     </Compile>
-    <Compile Include="MyDataSet\dsDirectSave.Designer.cs">
+    <Compile Include="DataSet\dsDirectSave.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>dsDirectSave.xsd</DependentUpon>
     </Compile>
-    <Compile Include="MyDataSet\dsTypeFuel.Designer.cs">
+    <Compile Include="DataSet\dsTypeFuel.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>dsTypeFuel.xsd</DependentUpon>
-    </Compile>
-    <Compile Include="Entity\E_Respondent.cs">
-      <DependentUpon>E_Respondent.dbml</DependentUpon>
     </Compile>
     <Compile Include="Entity\E_Respondent.designer.cs">
       <AutoGen>True</AutoGen>
@@ -125,32 +116,25 @@
       <DependentUpon>E_Respondent.dbml</DependentUpon>
     </Compile>
     <Compile Include="Excel\ExcelExport.cs" />
-    <Compile Include="ReportPanel.cs">
+    <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ReportPanel.Designer.cs">
-      <DependentUpon>ReportPanel.cs</DependentUpon>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="OkpoForm.cs">
+    <Compile Include="OKPO.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="OkpoForm.Designer.cs">
-      <DependentUpon>OkpoForm.cs</DependentUpon>
+    <Compile Include="OKPO.Designer.cs">
+      <DependentUpon>OKPO.cs</DependentUpon>
     </Compile>
-    <Compile Include="MyDataSet\okpoDataSet.Designer.cs">
+    <Compile Include="DataSet\okpoDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>okpoDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="MainForm.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="MainForm.Designer.cs">
-      <DependentUpon>MainForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="SaveHelper.cs" />
     <Compile Include="Settings.cs" />
     <Compile Include="Table1.cs">
       <SubType>UserControl</SubType>
@@ -164,25 +148,17 @@
     <Compile Include="TypeFuel.Designer.cs">
       <DependentUpon>TypeFuel.cs</DependentUpon>
     </Compile>
-    <Compile Include="MyDataSet\_dsOKPO.Designer.cs">
+    <Compile Include="DataSet\_dsOKPO.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>_dsOKPO.xsd</DependentUpon>
     </Compile>
     <Compile Include="UtilityFunction\AutoTotalSumm.cs" />
-    <Compile Include="_dsRV.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>_dsRV.xsd</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="AddEditOKPO.resx">
       <DependentUpon>AddEditOKPO.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CheckData\CheckProtocol.resx">
       <DependentUpon>CheckProtocol.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="CreateNewReport.resx">
-      <DependentUpon>CreateNewReport.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DirectionEnergySave.resx">
       <DependentUpon>DirectionEnergySave.cs</DependentUpon>
@@ -190,11 +166,11 @@
     <None Include="Entity\E_Respondent.dbml.layout">
       <DependentUpon>E_Respondent.dbml</DependentUpon>
     </None>
-    <EmbeddedResource Include="ReportPanel.resx">
-      <DependentUpon>ReportPanel.cs</DependentUpon>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="OkpoForm.resx">
-      <DependentUpon>OkpoForm.cs</DependentUpon>
+    <EmbeddedResource Include="OKPO.resx">
+      <DependentUpon>OKPO.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -206,9 +182,6 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="MainForm.resx">
-      <DependentUpon>MainForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Table1.resx">
       <DependentUpon>Table1.cs</DependentUpon>
     </EmbeddedResource>
@@ -218,48 +191,48 @@
     <None Include="App.config">
       <SubType>Designer</SubType>
     </None>
-    <None Include="MyDataSet\DataSet1.xsc">
+    <None Include="DataSet\DataSet1.xsc">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>
-    <None Include="MyDataSet\DataSet1.xsd">
+    <None Include="DataSet\DataSet1.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>DataSet1.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="MyDataSet\DataSet1.xss">
+    <None Include="DataSet\DataSet1.xss">
       <DependentUpon>DataSet1.xsd</DependentUpon>
     </None>
-    <None Include="MyDataSet\dsDirectSave.xsc">
+    <None Include="DataSet\dsDirectSave.xsc">
       <DependentUpon>dsDirectSave.xsd</DependentUpon>
     </None>
-    <None Include="MyDataSet\dsDirectSave.xsd">
+    <None Include="DataSet\dsDirectSave.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>dsDirectSave.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="MyDataSet\dsDirectSave.xss">
+    <None Include="DataSet\dsDirectSave.xss">
       <DependentUpon>dsDirectSave.xsd</DependentUpon>
     </None>
-    <None Include="MyDataSet\dsTypeFuel.xsc">
+    <None Include="DataSet\dsTypeFuel.xsc">
       <DependentUpon>dsTypeFuel.xsd</DependentUpon>
     </None>
-    <None Include="MyDataSet\dsTypeFuel.xsd">
+    <None Include="DataSet\dsTypeFuel.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>dsTypeFuel.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="MyDataSet\dsTypeFuel.xss">
+    <None Include="DataSet\dsTypeFuel.xss">
       <DependentUpon>dsTypeFuel.xsd</DependentUpon>
     </None>
-    <None Include="MyDataSet\okpoDataSet.xsc">
+    <None Include="DataSet\okpoDataSet.xsc">
       <DependentUpon>okpoDataSet.xsd</DependentUpon>
     </None>
-    <None Include="MyDataSet\okpoDataSet.xsd">
+    <None Include="DataSet\okpoDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>okpoDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="MyDataSet\okpoDataSet.xss">
+    <None Include="DataSet\okpoDataSet.xss">
       <DependentUpon>okpoDataSet.xsd</DependentUpon>
     </None>
     <None Include="Entity\E_Respondent.dbml">
@@ -276,27 +249,16 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <None Include="MyDataSet\_dsOKPO.xsc">
+    <None Include="DataSet\_dsOKPO.xsc">
       <DependentUpon>_dsOKPO.xsd</DependentUpon>
     </None>
-    <None Include="MyDataSet\_dsOKPO.xsd">
+    <None Include="DataSet\_dsOKPO.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>_dsOKPO.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="MyDataSet\_dsOKPO.xss">
+    <None Include="DataSet\_dsOKPO.xss">
       <DependentUpon>_dsOKPO.xsd</DependentUpon>
-    </None>
-    <None Include="_dsRV.xsc">
-      <DependentUpon>_dsRV.xsd</DependentUpon>
-    </None>
-    <None Include="_dsRV.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>_dsRV.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="_dsRV.xss">
-      <DependentUpon>_dsRV.xsd</DependentUpon>
     </None>
   </ItemGroup>
   <ItemGroup>
@@ -311,21 +273,7 @@
   <ItemGroup>
     <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
   </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\dbplus2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pencil.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\blueprint.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\dbmin2.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\database4 2.png" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
